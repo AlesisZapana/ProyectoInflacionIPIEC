@@ -1,0 +1,506 @@
+{
+  "formularios": [
+    {
+      "id": 1,
+      "fecha": "2026-02-09T23:30:40.854Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602092029.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": "Pizza consumida fuera del 2050.00 y ZHCbO - t Z7ieo - P ALO : p -25S0",
+              "score": 0.4436494618023994
+            },
+            {
+              "texto": "hogar 1821108 Tipo Precio Tip Precio Tipo Precio Tipo Precio Tipo Precio",
+              "score": 0.9776855120769825
+            },
+            {
+              "texto": "De muzzarela. Grande. Servicio en MEDIA MASA",
+              "score": 0.06182354876629148
+            },
+            {
+              "texto": "mesa. A la piedra o media masa Variante Variante Variante Variante Variante",
+              "score": 0.40513391148957023
+            },
+            {
+              "texto": "AAA o 5  _ -=__�___ _� _�__�_�- == A 2 A ng gg AAKAXA -� _����� 1",
+              "score": 0.28609801891613706
+            }
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 2,
+      "fecha": "2026-02-10T03:30:20.008Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602100030.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": "Pizza consumida fuera del 2050.00 y ZHCbO - t Z7ieo - P ALO : p -25S0",
+              "score": 0.4436494618023994
+            },
+            {
+              "texto": "hogar 1821108 Tipo Precio Tip Precio Tipo Precio Tipo Precio Tipo Precio",
+              "score": 0.9776855120769825
+            },
+            {
+              "texto": "De muzzarela. Grande. Servicio en MED�A MASA",
+              "score": 0.06182354876629148
+            },
+            {
+              "texto": "mesa. A la piedra o media masa Variante Variante Variante Variante Variante",
+              "score": 0.40513391148957023
+            },
+            {
+              "texto": "AAA o 5  _ -=__�___ _� _�__�_�- == A 2 A ng gg AAKAXA -� _����� 1",
+              "score": 0.28609801891613706
+            }
+          ]
+        }
+      ],
+      "estado": "Pendiente"
+    },
+    {
+      "id": 3,
+      "fecha": "2026-02-10T03:31:54.731Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602100031.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": "Razon: 1 Panel: 12",
+              "score": 0.44945958484575965
+            },
+            {
+              "texto": "A: 2022 M: 12 V: 2",
+              "score": 0.7153865013187508
+            },
+            {
+              "texto": "Gaseosa base cola po 328.00",
+              "score": 0.3532303116543738
+            },
+            {
+              "texto": "1211101 2 Tipo Precio 1",
+              "score": 0.7115875908133438
+            },
+            {
+              "texto": "la artal 5",
+              "score": 0.36601766289996984
+            },
+            {
+              "texto": "bote! a de PVC descartable de 1 COCA COLA",
+              "score": 0.4191641215437374
+            },
+            {
+              "texto": "Exdluir diet. Marca A",
+              "score": 0.9479453285777206
+            }
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            {
+              "texto": "o",
+              "score": 0.36771294835670987
+            },
+            {
+              "texto": "Razon: ..... Panel: 2",
+              "score": 0.13684505947268577
+            },
+            {
+              "texto": "A: M: 1 v:1",
+              "score": 0.8869680903048986
+            },
+            {
+              "texto": "ipo Precio",
+              "score": 0.4544188623781016
+            },
+            {
+              "texto": "farca",
+              "score": 0.5056809290264948
+            }
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            {
+              "texto": "PS",
+              "score": 0.1666437236305447
+            },
+            {
+              "texto": "Razc",
+              "score": 0.14716369586261213
+            },
+            {
+              "texto": "A:",
+              "score": 0.3245783280912886
+            },
+            {
+              "texto": "Tipo",
+              "score": 0.7681681747153954
+            },
+            {
+              "texto": "Marca",
+              "score": 0.523656257310265
+            }
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            {
+              "texto": "nm... Panel: 12",
+              "score": 0.6386295416557881
+            },
+            {
+              "texto": "M:1  Vv:2",
+              "score": 0.7691043473741437
+            },
+            {
+              "texto": "Precio",
+              "score": 0.7637089062980258
+            },
+            {
+              "texto": "y",
+              "score": 0.30440131320817154
+            }
+          ]
+        },
+        {
+          "seccion": 5,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.7093235533560469
+            }
+          ]
+        },
+        {
+          "seccion": 6,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel:",
+              "score": 0.9073290900519226
+            },
+            {
+              "texto": "Tipo Precic",
+              "score": 0.04206780673911337
+            },
+            {
+              "texto": "Marca",
+              "score": 0.5540090125609045
+            }
+          ]
+        },
+        {
+          "seccion": 7,
+          "lineas": [
+            {
+              "texto": "2",
+              "score": 0.46306359097873595
+            },
+            {
+              "texto": ")",
+              "score": 0.97842347674548
+            }
+          ]
+        },
+        {
+          "seccion": 8,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Par",
+              "score": 0.718727973778043
+            },
+            {
+              "texto": "A: M: 2",
+              "score": 0.03863266314972735
+            },
+            {
+              "texto": "Tipo",
+              "score": 0.6713162761996603
+            },
+            {
+              "texto": "Marca",
+              "score": 0.0929414881173114
+            }
+          ]
+        },
+        {
+          "seccion": 9,
+          "lineas": [
+            {
+              "texto": "el: 12",
+              "score": 0.06007858526106813
+            },
+            {
+              "texto": "v:2",
+              "score": 0.8366992243603288
+            },
+            {
+              "texto": "\"recio",
+              "score": 0.3865656534421693
+            }
+          ]
+        },
+        {
+          "seccion": 10,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.9862676005437692
+            }
+          ]
+        },
+        {
+          "seccion": 11,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.43224572398701944
+            }
+          ]
+        },
+        {
+          "seccion": 12,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.7488867255977734
+            }
+          ]
+        }
+      ],
+      "estado": "Pendiente"
+    },
+    {
+      "id": 4,
+      "fecha": "2026-02-10T03:51:40.198Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602100046.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": "P 2000.00 y 2100 f 272300: P 23300 $. 3630",
+              "score": 0.9887483216522228
+            },
+            {
+              "texto": "Tipo Precio Tip Precio Tipo Precio Tipo Precio Tipo Precio",
+              "score": 0.1282844131697476
+            },
+            {
+              "texto": "ENSALADA (LECHUGA",
+              "score": 0.9279136882433783
+            },
+            {
+              "texto": "Guarnici�n Guarnici�n Guarnici�n Guarnici�n Guarnici�n",
+              "score": 0.03186068192846525
+            },
+            {
+              "texto": "y sr o a E",
+              "score": 0.9822220945813953
+            }
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            {
+              "texto": "|",
+              "score": 0.3885194734549984
+            }
+          ]
+        }
+      ],
+      "estado": "Pendiente"
+    },
+    {
+      "id": 5,
+      "fecha": "2026-02-10T04:01:14.130Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602100059.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": "P 2000.00 y 2100 f 272300: P 23300 $. 3630",
+              "score": 0.6661046728441589
+            },
+            {
+              "texto": "Tipo Precio Tip Precio Tipo Precio Tipo Precio Tipo Precio",
+              "score": 0.37539546511006594
+            },
+            {
+              "texto": "ENSALADA (LECHUGA",
+              "score": 0.28627819001460875
+            },
+            {
+              "texto": "Guarnici�n Guarnici�n Guarnici�n Guarnici�n Guarnicion",
+              "score": 0.19021571887699373
+            }
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 9241,
+      "fecha": "2026-02-15T17:25:30.517Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602151424.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": "Razon: Panel:",
+              "score": 0.4496530905492364
+            },
+            {
+              "texto": "A: 2023 M: 2 V: 1",
+              "score": 0.8450219370892254
+            },
+            {
+              "texto": ")lesayuno consumido fuera p 1100.01",
+              "score": 0.5705951719391993
+            },
+            {
+              "texto": "el hogar Ti Precio",
+              "score": 0.949857559710193
+            },
+            {
+              "texto": "1311101 po recio",
+              "score": 0.2056333225319309
+            },
+            {
+              "texto": "af� con leche con 2 0 3 : AMBOS",
+              "score": 0.9297900393346783
+            },
+            {
+              "texto": "vedialunas. Servicio",
+              "score": 0.4266343971637452
+            },
+            {
+              "texto": "'ara consumir en el local. Por la ,",
+              "score": 0.9197803029231324
+            },
+            {
+              "texto": "wa�ana. o 4",
+              "score": 0.6826797912454547
+            }
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            {
+              "texto": "11 Razon: ..... Panel: 11",
+              "score": 0.9778022467576124
+            },
+            {
+              "texto": "A: 2023 M:4 V:1",
+              "score": 0.6638723599726761
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.38438846998513365
+            },
+            {
+              "texto": ">]",
+              "score": 0.7775963603129008
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.5412295088054908
+            },
+            {
+              "texto": "2",
+              "score": 0.26097465274790954
+            }
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel: 11",
+              "score": 0.08537147827834546
+            },
+            {
+              "texto": "A: 2023 M:5 V:1",
+              "score": 0.7700050557232105
+            },
+            {
+              "texto": "Tipo ) Precio",
+              "score": 0.5719160152013123
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.3532249988543592
+            }
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel: 11",
+              "score": 0.6099344883717501
+            },
+            {
+              "texto": "A: 2023 M:6 V:1",
+              "score": 0.608378215675778
+            },
+            {
+              "texto": "e / Precio",
+              "score": 0.6747676931110409
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.0634956542678824
+            },
+            {
+              "texto": "frambiaima ad y PAY",
+              "score": 0.03591247918122087
+            }
+          ]
+        },
+        {
+          "seccion": 5,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel: 11",
+              "score": 0.7751877154267968
+            },
+            {
+              "texto": "A: 2023 M:7 v:1",
+              "score": 0.9670704867798263
+            },
+            {
+              "texto": "k A Precio",
+              "score": 0.6307714658786958
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.6862746445772954
+            },
+            {
+              "texto": "fambiias de der",
+              "score": 0.39275984948906206
+            }
+          ]
+        }
+      ],
+      "estado": "Pendiente"
+    }
+  ]
+}

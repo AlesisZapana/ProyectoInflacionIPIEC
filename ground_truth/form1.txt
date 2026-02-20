@@ -1,0 +1,8 @@
+Razon:  Panel:11 Razon: ... Panel: 11 Razon: .... Panel: 11 Razon: .... Panel: 11 Razon: .... Panel: 11
+A: 2023 M:2 V:1     A: 2023 M:4 V:1     A:2023 M:5 V:1      A:2023 M:6 V:1      A:2023 M:7 V:1
+P   1100.00     P 1250      P 1350      P 1400      P 1600
+Tipo    Precio  Tipo    Precio  Tipo    Precio  Tipo    Precio  Tipo    Precio
+Servicio AMBOS      Servicio     Servicio    Servicio    Servicio
+    2                   
+Cantidad de     (num)   Cantidad de     (num)   Cantidad de     (num)   Cantidad de     (num)   Cantidad de     (num)
+medialunas              medialunas              medialunas              medialunas              medialunas

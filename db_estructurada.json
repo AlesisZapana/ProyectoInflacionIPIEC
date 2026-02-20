@@ -1,0 +1,6465 @@
+{
+  "formularios": [
+    {
+      "id": 1,
+      "fechaCarga": "2026-02-09T23:30:40.854Z",
+      "producto": "Pizza muzzarella",
+      "imagen": "recorte_202602092029.png",
+      "periodos": [
+        {
+          "anio": 2026,
+          "mes": 1,
+          "valor": 2050,
+          "textoOriginal": "Pizza consumida fuera del 2050.00",
+          "origen": "ocr",
+          "confianza": 0.44,
+          "lineasOCR": [
+            "Pizza consumida fuera del 2050.00",
+            "hogar 1821108 Tipo Precio",
+            "De muzzarela. Grande. Servicio en MEDIA MASA"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1100,
+          "textoOriginal": "M: 3 A: 2023 (inferido)",
+          "origen": "inferido",
+          "confianza": 0.6,
+          "lineasOCR": [
+            "Pizza consumida fuera",
+            "Tipo Precio"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 1450,
+          "textoOriginal": "M: 6 A: 2023 (inferido)",
+          "origen": "inferido",
+          "confianza": 0.65,
+          "lineasOCR": [
+            "Pizza",
+            "Precio"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 1750,
+          "textoOriginal": "M: 9 A: 2023 (inferido)",
+          "origen": "inferido",
+          "confianza": 0.7,
+          "lineasOCR": [
+            "Pizza consumida fuera",
+            "Tipo Precio"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 12,
+          "valor": 2050,
+          "textoOriginal": "Pizza consumida fuera del 2050.00",
+          "origen": "ocr",
+          "confianza": 0.44,
+          "lineasOCR": [
+            "Pizza consumida fuera del 2050.00",
+            "hogar 1821108 Tipo Precio",
+            "De muzzarela. Grande. Servicio en MEDIA MASA"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 3,
+      "fechaCarga": "2026-02-10T03:31:54.731Z",
+      "producto": "Gaseosa cola",
+      "imagen": "recorte_202602100031.png",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 328,
+          "textoOriginal": "A: 2022 M: 12 / 328.00",
+          "origen": "ocr",
+          "confianza": 0.35,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2",
+            "Gaseosa base cola po 328.00"
+          ]
+        },
+        {
+          "anio": 2026,
+          "mes": 1,
+          "valor": null,
+          "textoOriginal": "A: M: 1 v:1",
+          "origen": "ocr",
+          "confianza": 0.88,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 4,
+      "fechaCarga": "2026-02-10T03:51:40.198Z",
+      "producto": "Ensalada lechuga",
+      "imagen": "recorte_202602100046.png",
+      "periodos": [
+        {
+          "anio": 2026,
+          "mes": 1,
+          "valor": 2000,
+          "textoOriginal": "P 2000.00",
+          "origen": "ocr",
+          "confianza": 0.98,
+          "lineasOCR": [
+            "P 2000.00 y 2100",
+            "ENSALADA (LECHUGA"
+          ]
+        },
+        {
+          "anio": 2026,
+          "mes": 2,
+          "valor": 2100,
+          "textoOriginal": "P 2100",
+          "origen": "ocr",
+          "confianza": 0.98,
+          "lineasOCR": [
+            "P 2000.00 y 2100"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1100,
+          "textoOriginal": "M: 3 A: 2023 (inferido)",
+          "origen": "inferido",
+          "confianza": 0.6,
+          "lineasOCR": [
+            "ENSALADA (LECHUGA)",
+            "Tipo Precio"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 1450,
+          "textoOriginal": "M: 6 A: 2023 (inferido)",
+          "origen": "inferido",
+          "confianza": 0.65,
+          "lineasOCR": [
+            "ENSALADA (LECHUGA)",
+            "Precio"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 1750,
+          "textoOriginal": "M: 9 A: 2023 (inferido)",
+          "origen": "inferido",
+          "confianza": 0.7,
+          "lineasOCR": [
+            "ENSALADA (LECHUGA)",
+            "Tipo Precio"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 12,
+          "valor": 2000,
+          "textoOriginal": "P 2000.00",
+          "origen": "ocr",
+          "confianza": 0.98,
+          "lineasOCR": [
+            "P 2000.00 y 2100",
+            "ENSALADA (LECHUGA)"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 12,
+          "valor": 2100,
+          "textoOriginal": "P 2100",
+          "origen": "ocr",
+          "confianza": 0.98,
+          "lineasOCR": [
+            "P 2000.00 y 2100"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 5,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Manzana roja kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 650,
+          "textoOriginal": "A: 2022 M: 12 / 650.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2",
+            "Gaseosa base cola po 328.00"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 650,
+          "textoOriginal": "A: 2023 M: 1 650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 980,
+          "textoOriginal": "A: 2023 M: 1 980",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1200,
+          "textoOriginal": "A: 2023 M: 1 1200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 6,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Manzana verde kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 650,
+          "textoOriginal": "A: 2022 M: 12 / 650.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2",
+            "Gaseosa base cola po 328.00"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 650,
+          "textoOriginal": "A: 2023 M: 1 650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 980,
+          "textoOriginal": "A: 2023 M: 1 980",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1200,
+          "textoOriginal": "A: 2023 M: 1 1200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 8,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Limon kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 300,
+          "textoOriginal": "A: 2022 M: 12 / 300.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2",
+            "Gaseosa base cola po 328.00"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 300,
+          "textoOriginal": "A: 2023 M: 1 300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 380,
+          "textoOriginal": "A: 2023 M: 2 380",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 620,
+          "textoOriginal": "A: 2023 M: 3 620",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 9,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Mandarina kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 340,
+          "textoOriginal": "A: 2022 M: 12 / 340.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2",
+            "Gaseosa base cola po 328.00"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 340,
+          "textoOriginal": "A: 2023 M: 1 340",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 340,
+          "textoOriginal": "A: 2023 M: 2 380",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 10,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Naranja kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 350,
+          "textoOriginal": "A: 2022 M: 12 / 350.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 350,
+          "textoOriginal": "A: 2023 M: 1 350",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 350,
+          "textoOriginal": "A: 2023 M: 2 350",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1050,
+          "textoOriginal": "A: 2023 M: 3 1050",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 11,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Banana kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 480,
+          "textoOriginal": "A: 2022 M: 12 / 480.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 700,
+          "textoOriginal": "A: 2023 M: 1 700",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 760,
+          "textoOriginal": "A: 2023 M: 2 760",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 760,
+          "textoOriginal": "A: 2023 M: 3 760",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 12,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pera kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 450,
+          "textoOriginal": "A: 2022 M: 12 / 450.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 450,
+          "textoOriginal": "A: 2023 M: 1 450",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 660,
+          "textoOriginal": "A: 2023 M: 2 660",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 660,
+          "textoOriginal": "A: 2023 M: 3 660",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 13,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Batata kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 690,
+          "textoOriginal": "A: 2022 M: 12 / 690.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 690,
+          "textoOriginal": "A: 2023 M: 1 690",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 690,
+          "textoOriginal": "A: 2023 M: 2 690",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 690,
+          "textoOriginal": "A: 2023 M: 3 690",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 14,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Papa kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 290,
+          "textoOriginal": "A: 2022 M: 12 / 290.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 290,
+          "textoOriginal": "A: 2023 M: 1 290",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 550,
+          "textoOriginal": "A: 2023 M: 2 550",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 550,
+          "textoOriginal": "A: 2023 M: 3 550",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 15,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Aji Rojo kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 1800,
+          "textoOriginal": "A: 2022 M: 12 / 1800.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 1800,
+          "textoOriginal": "A: 2023 M: 1 1800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 1300,
+          "textoOriginal": "A: 2023 M: 2 1300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1300,
+          "textoOriginal": "A: 2023 M: 3 1300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 16,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Ajo (2 cabezas)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 180,
+          "textoOriginal": "A: 2022 M: 12 / 180.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 180,
+          "textoOriginal": "A: 2023 M: 1 180",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 200,
+          "textoOriginal": "A: 2023 M: 2 200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 200,
+          "textoOriginal": "A: 2023 M: 3 200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 17,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Cebolla kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 650,
+          "textoOriginal": "A: 2022 M: 12 / 650.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 650,
+          "textoOriginal": "A: 2023 M: 1 650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 650,
+          "textoOriginal": "A: 2023 M: 2 650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 650,
+          "textoOriginal": "A: 2023 M: 3 650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 18,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Tomate redondo kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 650,
+          "textoOriginal": "A: 2022 M: 12 / 650.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 660,
+          "textoOriginal": "A: 2023 M: 1 660",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 780,
+          "textoOriginal": "A: 2023 M: 2 780",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 780,
+          "textoOriginal": "A: 2023 M: 3 780",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 19,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Zanahoria kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 245,
+          "textoOriginal": "A: 2022 M: 12 / 245.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 400,
+          "textoOriginal": "A: 2023 M: 1 400",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 400,
+          "textoOriginal": "A: 2023 M: 2 400",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 600,
+          "textoOriginal": "A: 2023 M: 3 600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 20,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Zapallito kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 740,
+          "textoOriginal": "A: 2022 M: 12 / 740.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 740,
+          "textoOriginal": "A: 2023 M: 1 740",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 740,
+          "textoOriginal": "A: 2023 M: 2 740",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 740,
+          "textoOriginal": "A: 2023 M: 3 740",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 21,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Zapallo anco kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 340,
+          "textoOriginal": "A: 2022 M: 12 / 340.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 340,
+          "textoOriginal": "A: 2023 M: 1 340",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 360,
+          "textoOriginal": "A: 2023 M: 2 360",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 360,
+          "textoOriginal": "A: 2023 M: 3 360",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 22,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Aji Verde kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 970,
+          "textoOriginal": "A: 2022 M: 12 / 970.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 1800,
+          "textoOriginal": "A: 2023 M: 1 1800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 1300,
+          "textoOriginal": "A: 2023 M: 2 1300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1300,
+          "textoOriginal": "A: 2023 M: 3 1300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 23,
+      "tipo": "Fruteria y Verduleria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Carbón Bolsa 5Kg",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 830,
+          "textoOriginal": "A: 2022 M: 12 / 830.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 880,
+          "textoOriginal": "A: 2023 M: 1 880",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 980,
+          "textoOriginal": "A: 2023 M: 2 980",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1050,
+          "textoOriginal": "A: 2023 M: 3 1050",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 24,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pan de Viena (Envasado 200Gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 289,
+          "textoOriginal": "A: 2022 M: 12 / 289.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 298.43,
+          "textoOriginal": "A: 2023 M: 1 298",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 312,
+          "textoOriginal": "A: 2023 M: 2 312",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 338,
+          "textoOriginal": "A: 2023 M: 3 338",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 26,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Rebozador ( 450 Gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 220.59,
+          "textoOriginal": "A: 2022 M: 12 / 220.59",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 220.59,
+          "textoOriginal": "A: 2023 M: 1 220.59",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 244.42,
+          "textoOriginal": "A: 2023 M: 2 244.42",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 253.71,
+          "textoOriginal": "A: 2023 M: 3 253.71",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 27,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Galletitas dulces con relleno",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 339,
+          "textoOriginal": "A: 2022 M: 12 / 339.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 339,
+          "textoOriginal": "A: 2023 M: 1 339",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 362,
+          "textoOriginal": "A: 2023 M: 2 362",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 374,
+          "textoOriginal": "A: 2023 M: 3 374",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 28,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Galletitas dulces sin relleno",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 306,
+          "textoOriginal": "A: 2022 M: 12 / 306.00",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 306,
+          "textoOriginal": "A: 2023 M: 1 306",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 322,
+          "textoOriginal": "A: 2023 M: 2 322",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 322,
+          "textoOriginal": "A: 2023 M: 3 322",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 29,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Galletitas de agua envasadas",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 266.99,
+          "textoOriginal": "A: 2022 M: 12 / 266.99",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 277.14,
+          "textoOriginal": "A: 2023 M: 1 277.14",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 277.14,
+          "textoOriginal": "A: 2023 M: 2 277.14",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 287,
+          "textoOriginal": "A: 2023 M: 3 287.67",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 30,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Arroz blanco simple",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 298.48,
+          "textoOriginal": "A: 2022 M: 12 / 298.48",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 468,
+          "textoOriginal": "A: 2023 M: 1 468",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 496,
+          "textoOriginal": "A: 2023 M: 2 496",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 496,
+          "textoOriginal": "A: 2023 M: 3 496",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 31,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Arroz Integral",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 165,
+          "textoOriginal": "A: 2022 M: 12 / 165",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 320,
+          "textoOriginal": "A: 2023 M: 1 320",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 336,
+          "textoOriginal": "A: 2023 M: 2 336",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 32,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Copos de maiz",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 376,
+          "textoOriginal": "A: 2022 M: 12 / 376",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 383,
+          "textoOriginal": "A: 2023 M: 1 383",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 403,
+          "textoOriginal": "A: 2023 M: 2 403",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 403,
+          "textoOriginal": "A: 2023 M: 3 403",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 33,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Maiz pisingallo",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 342,
+          "textoOriginal": "A: 2022 M: 12 / 342",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 342,
+          "textoOriginal": "A: 2023 M: 1 342",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 342,
+          "textoOriginal": "A: 2023 M: 2 342",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 342,
+          "textoOriginal": "A: 2023 M: 3 342",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 34,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Fideos Secos",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 356,
+          "textoOriginal": "A: 2022 M: 12 / 356",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 356,
+          "textoOriginal": "A: 2023 M: 1 356",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 394,
+          "textoOriginal": "A: 2023 M: 2 394",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 394,
+          "textoOriginal": "A: 2023 M: 3 394",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 35,
+      "tipo": "Heladeria",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Helado Suelto (Kg)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 2150,
+          "textoOriginal": "A: 2022 M: 12 / 2150",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 2350,
+          "textoOriginal": "A: 2023 M: 1 2350",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 2790,
+          "textoOriginal": "A: 2023 M: 2 2790",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 2790,
+          "textoOriginal": "A: 2023 M: 3 2790",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 36,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Bocaditos de pollo rebozados (caja 200gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 835,
+          "textoOriginal": "A: 2022 M: 12 / 835",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 849,
+          "textoOriginal": "A: 2023 M: 1 849",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 889,
+          "textoOriginal": "A: 2023 M: 2 889",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 935,
+          "textoOriginal": "A: 2023 M: 3 935",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 37,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Salchichas tipo viena (6 u.)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 314,
+          "textoOriginal": "A: 2022 M: 12 / 314",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 305,
+          "textoOriginal": "A: 2023 M: 1 305",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 321,
+          "textoOriginal": "A: 2023 M: 2 321",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 337,
+          "textoOriginal": "A: 2023 M: 3 337",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 38,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Paté de foie",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 179,
+          "textoOriginal": "A: 2022 M: 12 / 179",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 188,
+          "textoOriginal": "A: 2023 M: 1 188",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 197,
+          "textoOriginal": "A: 2023 M: 2 197",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 197,
+          "textoOriginal": "A: 2023 M: 3 197",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 39,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Atun",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 282.36,
+          "textoOriginal": "A: 2022 M: 12 / 282.36",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 282.36,
+          "textoOriginal": "A: 2023 M: 1 282.36",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 329,
+          "textoOriginal": "A: 2023 M: 2 329",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 329,
+          "textoOriginal": "A: 2023 M: 3 329",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 40,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Caballa",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 999,
+          "textoOriginal": "A: 2022 M: 12 / 999",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 999,
+          "textoOriginal": "A: 2023 M: 1 999",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1109,
+          "textoOriginal": "A: 2023 M: 2 1109",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 1109,
+          "textoOriginal": "A: 2023 M: 3 1109",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 41,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Aceite girasol (900cc a 1500cc)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 639,
+          "textoOriginal": "A: 2022 M: 12 / 639",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 639,
+          "textoOriginal": "A: 2023 M: 1 639",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 665,
+          "textoOriginal": "A: 2023 M: 2 665",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 699,
+          "textoOriginal": "A: 2023 M: 3 699",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 42,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Aceite de maiz (890cc a 1000cc)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 1299,
+          "textoOriginal": "A: 2022 M: 12 / 1299",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 1299,
+          "textoOriginal": "A: 2023 M: 1 1299",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1365,
+          "textoOriginal": "A: 2023 M: 2 1365",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 1365,
+          "textoOriginal": "A: 2023 M: 3 1365",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 43,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Aceite de oliva (500cc)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 1199,
+          "textoOriginal": "A: 2022 M: 12 / 1199",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 1199,
+          "textoOriginal": "A: 2023 M: 1 1199",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1259,
+          "textoOriginal": "A: 2023 M: 2 1259",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 1259,
+          "textoOriginal": "A: 2023 M: 3 1259",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 44,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Aceite mezcla",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 355,
+          "textoOriginal": "A: 2022 M: 12 / 355",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 355,
+          "textoOriginal": "A: 2023 M: 1 355",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 355,
+          "textoOriginal": "A: 2023 M: 2 355",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 355,
+          "textoOriginal": "A: 2023 M: 3 355",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 45,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Margarina p/cocinar",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 276,
+          "textoOriginal": "A: 2022 M: 12 / 276",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 276,
+          "textoOriginal": "A: 2023 M: 1 276",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 289,
+          "textoOriginal": "A: 2023 M: 2 289",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 289,
+          "textoOriginal": "A: 2023 M: 3 289",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 46,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Huevos (6 unidades)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 605,
+          "textoOriginal": "A: 2022 M: 12 / 605",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 605,
+          "textoOriginal": "A: 2023 M: 1 605",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 655,
+          "textoOriginal": "A: 2023 M: 2 655",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 655,
+          "textoOriginal": "A: 2023 M: 3 655",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 47,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Duraznos en conserva",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 755,
+          "textoOriginal": "A: 2022 M: 12 / 755",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 815,
+          "textoOriginal": "A: 2023 M: 1 815",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 879,
+          "textoOriginal": "A: 2023 M: 2 879",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 925,
+          "textoOriginal": "A: 2023 M: 3 925",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 48,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Ensalada de frutas en conserva",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 738.57,
+          "textoOriginal": "A: 2022 M: 12 / 738.57",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 738.57,
+          "textoOriginal": "A: 2023 M: 1 738.57",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 865,
+          "textoOriginal": "A: 2023 M: 2 865",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 865,
+          "textoOriginal": "A: 2023 M: 3 865",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 49,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Papas fritas congeladas",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 719,
+          "textoOriginal": "A: 2022 M: 12 / 719",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 765,
+          "textoOriginal": "A: 2023 M: 1 765",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 809,
+          "textoOriginal": "A: 2023 M: 2 809",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 809,
+          "textoOriginal": "A: 2023 M: 3 809",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 50,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Arvejas en conserva",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 193,
+          "textoOriginal": "A: 2022 M: 12 / 193",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 193,
+          "textoOriginal": "A: 2023 M: 1 193",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 217,
+          "textoOriginal": "A: 2023 M: 2 217",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 217,
+          "textoOriginal": "A: 2023 M: 3 217",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 51,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Porotos secos (500 gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 480,
+          "textoOriginal": "A: 2022 M: 12 / 480",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 549,
+          "textoOriginal": "A: 2023 M: 1 549",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 605,
+          "textoOriginal": "A: 2023 M: 2 605",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 605,
+          "textoOriginal": "A: 2023 M: 3 605",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 52,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pure instantaneo",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 266,
+          "textoOriginal": "A: 2022 M: 12 / 266",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 417,
+          "textoOriginal": "A: 2023 M: 1 417",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 53,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Milanesa de soja (4 u.)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 885,
+          "textoOriginal": "A: 2022 M: 12 / 885",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 899,
+          "textoOriginal": "A: 2023 M: 1 899",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 945,
+          "textoOriginal": "A: 2023 M: 2 945",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 989,
+          "textoOriginal": "A: 2023 M: 3 989",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 54,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Azucar (1kg)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 276.17,
+          "textoOriginal": "A: 2022 M: 12 / 276.17",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 585,
+          "textoOriginal": "A: 2023 M: 1 585",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 715,
+          "textoOriginal": "A: 2023 M: 2 715",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 55,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Endulzante",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 675,
+          "textoOriginal": "A: 2022 M: 12 / 675",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 785,
+          "textoOriginal": "A: 2023 M: 1 785",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 845,
+          "textoOriginal": "A: 2023 M: 2 845",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 56,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Dulce de membrillo (500gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 1358,
+          "textoOriginal": "A: 2022 M: 12 / 1358",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 982,
+          "textoOriginal": "A: 2023 M: 1 982",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 982,
+          "textoOriginal": "A: 2023 M: 2 982",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 57,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Mermelada (500 gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 545,
+          "textoOriginal": "A: 2022 M: 12 / 545",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 545,
+          "textoOriginal": "A: 2023 M: 1 545",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 569,
+          "textoOriginal": "A: 2023 M: 2 569",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 58,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Miel (500 gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 970,
+          "textoOriginal": "A: 2022 M: 12 / 970",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 979,
+          "textoOriginal": "A: 2023 M: 1 979",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1075,
+          "textoOriginal": "A: 2023 M: 2 1075",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 59,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Chocolotada en polvo (400gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 350,
+          "textoOriginal": "A: 2022 M: 12 / 350",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 360,
+          "textoOriginal": "A: 2023 M: 1 360",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 368,
+          "textoOriginal": "A: 2023 M: 2 368",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 60,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Oregano (50gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 419,
+          "textoOriginal": "A: 2022 M: 12 / 419",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 424,
+          "textoOriginal": "A: 2023 M: 1 424",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 481,
+          "textoOriginal": "A: 2023 M: 2 481",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 446,
+          "textoOriginal": "A: 2023 M: 2 446",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 61,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Sal fina (500gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 192,
+          "textoOriginal": "A: 2022 M: 12 / 192",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 202,
+          "textoOriginal": "A: 2023 M: 1 202",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 224,
+          "textoOriginal": "A: 2023 M: 2 224",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 210,
+          "textoOriginal": "A: 2023 M: 2 210",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 62,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Sal gruesa (1kg)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 330,
+          "textoOriginal": "A: 2022 M: 12 / 330",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 336,
+          "textoOriginal": "A: 2023 M: 1 336",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 282,
+          "textoOriginal": "A: 2023 M: 2 282",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 63,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Mayonesa (250gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 260,
+          "textoOriginal": "A: 2022 M: 12 / 260",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 265,
+          "textoOriginal": "A: 2023 M: 1 265",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 278,
+          "textoOriginal": "A: 2023 M: 2 278",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 278,
+          "textoOriginal": "A: 2023 M: 2 278",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 64,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Mostaza (250gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 219.5,
+          "textoOriginal": "A: 2022 M: 12 / 219.5",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 227.88,
+          "textoOriginal": "A: 2023 M: 1 227.88",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 236.54,
+          "textoOriginal": "A: 2023 M: 2 236.54",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 245.53,
+          "textoOriginal": "A: 2023 M: 2 245.53",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 65,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Ketchup (250gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 250,
+          "textoOriginal": "A: 2023 M: 5 / 250",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 262,
+          "textoOriginal": "A: 2023 M: 6 262",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 282,
+          "textoOriginal": "A: 2023 M: 2 282",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 282,
+          "textoOriginal": "A: 2023 M: 2 282",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 66,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Yerba mate (500gr)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 779,
+          "textoOriginal": "A: 2022 M: 12 / 779",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 770,
+          "textoOriginal": "A: 2023 M: 1 770",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 865,
+          "textoOriginal": "A: 2023 M: 2 865",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 909,
+          "textoOriginal": "A: 2023 M: 2 909",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 67,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Yerba mate saquitos (25 u.)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 295,
+          "textoOriginal": "A: 2022 M: 12 / 295",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 313,
+          "textoOriginal": "A: 2023 M: 1 313",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 348,
+          "textoOriginal": "A: 2023 M: 2 348",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 365,
+          "textoOriginal": "A: 2023 M: 2 365",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 68,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pantalon Niño (largo - algodon)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 9990,
+          "textoOriginal": "A: 2022 M: 12 / 9990",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 9990,
+          "textoOriginal": "A: 2023 M: 1 9990",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 9900,
+          "textoOriginal": "A: 2023 M: 2 9900",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 10310,
+          "textoOriginal": "A: 2023 M: 2 10310",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 9990,
+          "textoOriginal": "A: 2023 M: 2 9990",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 69,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pantalon Jean (Niño)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 10600,
+          "textoOriginal": "A: 2022 M: 12 / 10600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 10600,
+          "textoOriginal": "A: 2023 M: 1 12630",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 10600,
+          "textoOriginal": "A: 2023 M: 2 10600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 12630,
+          "textoOriginal": "A: 2023 M: 2 12630",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 12240,
+          "textoOriginal": "A: 2023 M: 2 12240",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 70,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pantalon Jogging (Niño)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 5990,
+          "textoOriginal": "A: 2022 M: 12 / 5990",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 4792,
+          "textoOriginal": "A: 2023 M: 1 4792",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 5990,
+          "textoOriginal": "A: 2023 M: 2 5990",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 6180,
+          "textoOriginal": "A: 2023 M: 2 6180",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 6180,
+          "textoOriginal": "A: 2023 M: 2 6180",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 71,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Campera (algodon) (Niño)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 18900,
+          "textoOriginal": "A: 2022 M: 12 / 18900",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 18900,
+          "textoOriginal": "A: 2023 M: 1 18900",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 19500,
+          "textoOriginal": "A: 2023 M: 2 19500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 20120,
+          "textoOriginal": "A: 2023 M: 2 20120",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 19500,
+          "textoOriginal": "A: 2023 M: 2 19500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 72,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pullover Niño (lana)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 12000,
+          "textoOriginal": "A: 2022 M: 12 / 12000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 9600,
+          "textoOriginal": "A: 2023 M: 1 9600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 12000,
+          "textoOriginal": "A: 2023 M: 2 12000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 12380,
+          "textoOriginal": "A: 2023 M: 2 12380",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 12000,
+          "textoOriginal": "A: 2023 M: 2 12000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 73,
+      "tipo": "Libros y Textos",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Libro Infantil",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 2850,
+          "textoOriginal": "A: 2022 M: 12 / 2850",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 2850,
+          "textoOriginal": "A: 2023 M: 1 2850",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 2850,
+          "textoOriginal": "A: 2023 M: 2 2850",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 2850,
+          "textoOriginal": "A: 2023 M: 2 2850",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 74,
+      "tipo": "Libros y Textos",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Clásico de la literatura",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 3800,
+          "textoOriginal": "A: 2022 M: 12 / 3800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 3800,
+          "textoOriginal": "A: 2023 M: 1 3800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 4800,
+          "textoOriginal": "A: 2023 M: 2 4800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 4800,
+          "textoOriginal": "A: 2023 M: 2 4800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 75,
+      "tipo": "Libros y Textos",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Texto universitario",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2022,
+          "mes": 12,
+          "valor": 2500,
+          "textoOriginal": "A: 2022 M: 12 / 2500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 1,
+          "valor": 1900,
+          "textoOriginal": "A: 2023 M: 1 1900",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 2,
+          "valor": 2890,
+          "textoOriginal": "A: 2023 M: 2 2890",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 2890,
+          "textoOriginal": "A: 2023 M: 2 2890",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 76,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Empanada mesa(unidad)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 450,
+          "textoOriginal": "A: 2022 M: 12 / 450",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 500,
+          "textoOriginal": "A: 2023 M: 1 500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 550,
+          "textoOriginal": "A: 2023 M: 2 550",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 600,
+          "textoOriginal": "A: 2023 M: 2 600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 675,
+          "textoOriginal": "A: 2023 M: 2 675",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 77,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Agua mineral (500cc)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 450,
+          "textoOriginal": "A: 2022 M: 12 / 450",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 500,
+          "textoOriginal": "A: 2023 M: 1 500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 550,
+          "textoOriginal": "A: 2023 M: 2 550",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 600,
+          "textoOriginal": "A: 2023 M: 2 600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 650,
+          "textoOriginal": "A: 2023 M: 2 650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 78,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Cerveza botella grande",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1650,
+          "textoOriginal": "A: 2022 M: 12 / 1650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 2300,
+          "textoOriginal": "A: 2023 M: 1 2300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 2300,
+          "textoOriginal": "A: 2023 M: 2 2300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 2500,
+          "textoOriginal": "A: 2023 M: 2 2500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 2750,
+          "textoOriginal": "A: 2023 M: 2 2750",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 79,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Café (chico)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 400,
+          "textoOriginal": "A: 2022 M: 12 / 400",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 500,
+          "textoOriginal": "A: 2023 M: 1 500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 550,
+          "textoOriginal": "A: 2023 M: 2 550",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 700,
+          "textoOriginal": "A: 2023 M: 2 700",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 800,
+          "textoOriginal": "A: 2023 M: 2 800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 80,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Jugo de naranja (exprimido)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 800,
+          "textoOriginal": "A: 2022 M: 12 / 800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 900,
+          "textoOriginal": "A: 2023 M: 1 900",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 990,
+          "textoOriginal": "A: 2023 M: 2 990",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 1200,
+          "textoOriginal": "A: 2023 M: 2 1200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1350,
+          "textoOriginal": "A: 2023 M: 2 1350",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 81,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Desayuno (cafe con 2/3 medialunas)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1100,
+          "textoOriginal": "A: 2022 M: 12 / 1100",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 1250,
+          "textoOriginal": "A: 2023 M: 1 1250",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 1350,
+          "textoOriginal": "A: 2023 M: 2 1350",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 1400,
+          "textoOriginal": "A: 2023 M: 2 1400",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1600,
+          "textoOriginal": "A: 2023 M: 2 1600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 82,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pizza (muzzarela)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 2050,
+          "textoOriginal": "A: 2022 M: 12 / 2050",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 2400,
+          "textoOriginal": "A: 2023 M: 1 2400",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 2700,
+          "textoOriginal": "A: 2023 M: 2 2700",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 3200,
+          "textoOriginal": "A: 2023 M: 2 3200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 3550,
+          "textoOriginal": "A: 2023 M: 2 3550",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 83,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Menu ejecutivo",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 1500,
+          "textoOriginal": "A: 2022 M: 12 / 1500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 2000,
+          "textoOriginal": "A: 2023 M: 1 2000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 2000,
+          "textoOriginal": "A: 2023 M: 2 2000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 2300,
+          "textoOriginal": "A: 2023 M: 2 2300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 2400,
+          "textoOriginal": "A: 2023 M: 2 2400",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 84,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Milanesa carne vacuna c/guarnicion",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 2000,
+          "textoOriginal": "A: 2022 M: 12 / 2000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 2100,
+          "textoOriginal": "A: 2023 M: 1 2100",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 2500,
+          "textoOriginal": "A: 2023 M: 2 2500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 3300,
+          "textoOriginal": "A: 2023 M: 2 3300",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 3650,
+          "textoOriginal": "A: 2023 M: 2 3650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 85,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Ravioles con salsa",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 2150,
+          "textoOriginal": "A: 2022 M: 12 / 2150",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 2450,
+          "textoOriginal": "A: 2023 M: 1 2450",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 3000,
+          "textoOriginal": "A: 2023 M: 2 3000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 3500,
+          "textoOriginal": "A: 2023 M: 2 3500",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 3850,
+          "textoOriginal": "A: 2023 M: 2 3850",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 86,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Bife de chorizo",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 2750,
+          "textoOriginal": "A: 2022 M: 12 / 2750",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 3000,
+          "textoOriginal": "A: 2023 M: 1 3000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 3200,
+          "textoOriginal": "A: 2023 M: 2 3200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 3800,
+          "textoOriginal": "A: 2023 M: 2 3800",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 4100,
+          "textoOriginal": "A: 2023 M: 2 41000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 87,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pantalon mujer (algodon)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 59690,
+          "textoOriginal": "A: 2023 M: 1 59690",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 65660,
+          "textoOriginal": "A: 2023 M: 2 65660",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 65660,
+          "textoOriginal": "A: 2023 M: 2 6560",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 71630,
+          "textoOriginal": "A: 2023 M: 2 71630",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 88,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pantalon Jean (Mujer)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 9990,
+          "textoOriginal": "A: 2022 M: 12 / 9990",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 14170,
+          "textoOriginal": "A: 2023 M: 1 14170",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 15590,
+          "textoOriginal": "A: 2023 M: 2 15590",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 15590,
+          "textoOriginal": "A: 2023 M: 2 15590",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 17010,
+          "textoOriginal": "A: 2023 M: 2 17010",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 89,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Calza",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 24574,
+          "textoOriginal": "A: 2022 M: 12 / 2150",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 24574,
+          "textoOriginal": "A: 2023 M: 1 24574",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 26592,
+          "textoOriginal": "A: 2023 M: 2 26592",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 26592,
+          "textoOriginal": "A: 2023 M: 2 26592",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 26592,
+          "textoOriginal": "A: 2023 M: 2 26592",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 90,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pullover (Mujer)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 42530,
+          "textoOriginal": "A: 2022 M: 12 / 42530",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 60330,
+          "textoOriginal": "A: 2023 M: 1 60330",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 39816,
+          "textoOriginal": "A: 2023 M: 2 39816",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 39816,
+          "textoOriginal": "A: 2023 M: 2 39816",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 43434,
+          "textoOriginal": "A: 2023 M: 2 43434",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 91,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Camisa (Mujer)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 32790,
+          "textoOriginal": "A: 2022 M: 12 / 32790",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 46530,
+          "textoOriginal": "A: 2023 M: 1 46530",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 51180,
+          "textoOriginal": "A: 2023 M: 2 51180",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 51180,
+          "textoOriginal": "A: 2023 M: 2 51180",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 55830,
+          "textoOriginal": "A: 2023 M: 2 55830",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 92,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Remera (Mujer)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 15070,
+          "textoOriginal": "A: 2022 M: 12 / 15070",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 21370,
+          "textoOriginal": "A: 2023 M: 1 21370",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 23510,
+          "textoOriginal": "A: 2023 M: 2 23510",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 23510,
+          "textoOriginal": "A: 2023 M: 2 23510",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 25650,
+          "textoOriginal": "A: 2023 M: 2 25650",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 93,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Pantalon (Hombre)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 47530,
+          "textoOriginal": "A: 2022 M: 12 / 47530",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 67430,
+          "textoOriginal": "A: 2023 M: 1 67430",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 74170,
+          "textoOriginal": "A: 2023 M: 2 74170",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 74170,
+          "textoOriginal": "A: 2023 M: 2 74170",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 56637,
+          "textoOriginal": "A: 2023 M: 2 56637",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 94,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Bermuda (Hombre)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 36000,
+          "textoOriginal": "A: 2022 M: 12 / 36000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 36000,
+          "textoOriginal": "A: 2023 M: 1 36000",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 56180,
+          "textoOriginal": "A: 2023 M: 2 56180",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 56180,
+          "textoOriginal": "A: 2023 M: 2 56180",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 61290,
+          "textoOriginal": "A: 2023 M: 2 61290",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 95,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Buzo (Hombre)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 37390,
+          "textoOriginal": "A: 2022 M: 12 / 37390",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 53050,
+          "textoOriginal": "A: 2023 M: 1 60330",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 58360,
+          "textoOriginal": "A: 2023 M: 2 39816",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 37934,
+          "textoOriginal": "A: 2023 M: 2 39816",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 41385.5,
+          "textoOriginal": "A: 2023 M: 2 43434",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 96,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Campera (Hombre)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 168920,
+          "textoOriginal": "A: 2022 M: 12 / 168920",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 239640,
+          "textoOriginal": "A: 2023 M: 1 239640",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 263600,
+          "textoOriginal": "A: 2023 M: 2 263600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 263600,
+          "textoOriginal": "A: 2023 M: 2 263600",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 287560,
+          "textoOriginal": "A: 2023 M: 2 287560",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 97,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Camisa (Hombre)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 27550,
+          "textoOriginal": "A: 2022 M: 12 / 27550",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 39080,
+          "textoOriginal": "A: 2023 M: 1 39080",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 25794,
+          "textoOriginal": "A: 2023 M: 2 25794",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 25794,
+          "textoOriginal": "A: 2023 M: 2 25794",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 28140,
+          "textoOriginal": "A: 2023 M: 2 28140",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 98,
+      "tipo": "Ropa",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Remera (Hombre)",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 3,
+          "valor": 32060,
+          "textoOriginal": "A: 2022 M: 12 / 32060",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 4,
+          "valor": 45490,
+          "textoOriginal": "A: 2023 M: 1 45490",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 50040,
+          "textoOriginal": "A: 2023 M: 2 50040",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 50040,
+          "textoOriginal": "A: 2023 M: 2 50040",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 54590,
+          "textoOriginal": "A: 2023 M: 2 54590",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 99,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Cafe Molido",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 1485,
+          "textoOriginal": "A: 2022 M: 12 / 1485",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 1509,
+          "textoOriginal": "A: 2023 M: 1 1509",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1585,
+          "textoOriginal": "A: 2023 M: 2 1585",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 1585,
+          "textoOriginal": "A: 2023 M: 2 1585",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 1585,
+          "textoOriginal": "A: 2023 M: 2 1585",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 100,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Cafe instantaneo",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 1209,
+          "textoOriginal": "A: 2022 M: 12 / 1485",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 1235,
+          "textoOriginal": "A: 2023 M: 1 1509",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1295,
+          "textoOriginal": "A: 2023 M: 2 1295",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 1295,
+          "textoOriginal": "A: 2023 M: 2 1295",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 1295,
+          "textoOriginal": "A: 2023 M: 2 1295",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 101,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Tapas de empanada",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 397,
+          "textoOriginal": "A: 2022 M: 12 / 397",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 404,
+          "textoOriginal": "A: 2023 M: 1 404",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 404,
+          "textoOriginal": "A: 2023 M: 2 404",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 408,
+          "textoOriginal": "A: 2023 M: 2 408",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 408,
+          "textoOriginal": "A: 2023 M: 2 408",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 102,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Tapas para tarta",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 330.91,
+          "textoOriginal": "A: 2022 M: 12 / 330.91",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 341.5,
+          "textoOriginal": "A: 2023 M: 1 341.50",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 341.5,
+          "textoOriginal": "A: 2023 M: 2 341.5",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 406,
+          "textoOriginal": "A: 2023 M: 2 406",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 426,
+          "textoOriginal": "A: 2023 M: 2 426",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 103,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Hamburguesas congeladas",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 989,
+          "textoOriginal": "A: 2022 M: 12 / 989",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 989,
+          "textoOriginal": "A: 2023 M: 1 1055",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 1055,
+          "textoOriginal": "A: 2023 M: 2 1055",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 1055,
+          "textoOriginal": "A: 2023 M: 2 1055",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 1109,
+          "textoOriginal": "A: 2023 M: 2 1109",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 104,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Aceitunas",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 236,
+          "textoOriginal": "A: 2022 M: 12 / 1485",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 236,
+          "textoOriginal": "A: 2023 M: 1 1509",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 236,
+          "textoOriginal": "A: 2023 M: 2 236",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 313,
+          "textoOriginal": "A: 2023 M: 2 313",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 391,
+          "textoOriginal": "A: 2023 M: 2 391",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 105,
+      "tipo": "Almacen General",
+      "fechaCarga": "2026-02-13T13:31:54.731Z",
+      "producto": "Salsa lista",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2023,
+          "mes": 5,
+          "valor": 197,
+          "textoOriginal": "A: 2022 M: 12 / 197",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: 2022 M: 12 V: 2"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 6,
+          "valor": 200,
+          "textoOriginal": "A: 2023 M: 1 200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 7,
+          "valor": 210,
+          "textoOriginal": "A: 2023 M: 2 210",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 8,
+          "valor": 200,
+          "textoOriginal": "A: 2023 M: 2 200",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        },
+        {
+          "anio": 2023,
+          "mes": 9,
+          "valor": 210,
+          "textoOriginal": "A: 2023 M: 2 210",
+          "origen": "ocr",
+          "confianza": 1,
+          "lineasOCR": [
+            "A: M: 1 v:1",
+            "Tipo Precio",
+            "Marca"
+          ]
+        }
+      ],
+      "estado": "Confirmado"
+    },
+    {
+      "id": 1771562493579,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-20T04:41:33.579Z",
+      "producto": "Pizza Americana",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2024,
+          "mes": 1,
+          "valor": 2590,
+          "tipo": "Bar y restaurante",
+          "textoOriginal": "",
+          "origen": "manual",
+          "confianza": 1,
+          "lineasOCR": []
+        }
+      ],
+      "estado": "Confirmado"
+    }
+  ]
+}

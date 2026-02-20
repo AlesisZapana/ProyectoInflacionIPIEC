@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Image Editor</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.css">
+</head>
+<body>
+  <div class="container">
+
+    <!--
+      <div id="divMenuRecortar">
+        <input type="file" id="fileInput">
+        <button id="cropButton">Recortar</button>
+      </div>
+      
+      
+      <button id="btnVerFormularios">Ver Formularios Guardados</button>
+      <button id="btnAtrasFormulario" style="display: none;">Atrás</button>
+      
+      <div id="formulariosGuardados" style="margin-top: 20px;"></div>
+      
+      <div>
+        <img id="image" style="max-width: 100%;">
+      </div>  
+    
+      <div id="formulario-dinamico"></div>
+    -->
+      <!-- Controles principales -->
+    <div class="row">
+      <div class="col-md-12">
+        <div class="card">
+          <div class="card-header bg-primary text-white">
+            <i class="bi bi-sliders"></i> Controles de Imagen
+          </div>
+          <div class="card-body">
+            <div class="row mb-3">
+              <div class="col-md-6" id="divInputImagen">
+                <div class="input-group" >
+                  <input type="file" class="form-control" id="fileInput" accept="image/*">
+                  <label class="input-group-text" for="fileInput">
+                    <i class="bi bi-upload"></i>
+                  </label>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="btn-group-custom d-flex gap-2">
+                  <button class="btn btn-success flex-fill" id="cropButton">
+                    <i class="bi bi-scissors"></i> Recortar Imagen
+                  </button>
+                  <button class="btn btn-info flex-fill" id="btnVerFormularios">
+                    <i class="bi bi-list-ul"></i> Ver Formularios
+                  </button>
+                  <button class="btn btn-secondary flex-fill" id="btnAtrasFormulario" style="display: none;">
+                    <i class="bi bi-arrow-left"></i> Atrás
+                  </button>
+
+                  <button class="btn btn-warning flex-fill" id="btnAnalisis">
+                    <i class="bi bi-graph-up"></i> Análisis y Reportes
+                  </button>
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Área de imagen y formularios -->
+    <div class="row">
+      <!-- Imagen -->
+      <div class="col-md-12" id="divImagenSeleccionada">
+        <div class="card">
+          <div class="card-header bg-secondary text-white">
+            <i class="bi bi-image"></i> Vista Previa de la Imagen
+          </div>
+          <div class="card-body">
+            <div class="image-container">
+              <img id="image" class="img-fluid rounded" style="max-width: 100%; display: block;">
+              <div class="text-center text-muted mt-3" id="image-placeholder">
+                <i class="bi bi-image" style="font-size: 3rem;"></i>
+                <p>No hay imagen seleccionada. Por favor, sube una imagen.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row">
+      <!-- Formularios guardados -->
+      <div class="col-md-12">
+        <div class="card" style="display: none;" id="divFormulariosGuardados">
+          <div class="card-header bg-info text-white">
+            <i class="bi bi-save"></i> Formularios Guardados
+          </div>
+          <div class="card-body">
+            <div id="formulariosGuardados">
+              <p class="text-muted">No hay formularios guardados todavía.</p>
+            </div>
+          </div>
+        </div>
+
+        <!-- Formulario dinámico -->
+        <div class="card mt-3" id="divFormularioDinamico">
+          <div class="card-header bg-success text-white">
+            <i class="bi bi-pencil-square"></i> Formulario
+          </div>
+          <div class="card-body">
+            <div id="formulario-dinamico">
+              <p class="text-muted">Los controles del formulario aparecerán aquí después de recortar la imagen.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Modal para mostrar la imagen -->
+    <div class="modal fade" id="modalImagen" tabindex="-1" aria-labelledby="modalImagenLabel" aria-hidden="true">
+      <div class="modal-dialog modal-lg modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="modalImagenLabel">Imagen del Formulario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          </div>
+          <div class="modal-body text-center">
+            <img id="imagenModal" src="" class="img-fluid rounded" alt="Imagen del formulario" 
+                style="max-height: 70vh;">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cerrar</button>
+            <a id="descargarImagen" href="#" class="btn btn-primary" download>
+              <i class="bi bi-download"></i> Descargar
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal para editar-->
+    <div class="modal fade" id="modalEditarFormulario" tabindex="-1">
+      <div class="modal-dialog modal-lg modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title">Editar formulario</h5>
+            <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+          </div>
+
+          <div class="modal-body" id="modalEditarBody">
+            <!-- contenido dinámico -->
+          </div>
+
+          <div class="modal-footer">
+            <button class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+            <button class="btn btn-primary" id="btnGuardarEdicion">
+              Guardar cambios
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+  <!--<button id="btnPython">Ejecutar Python</button>-->
+
+    <!-- Bootstrap JS Bundle con Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- Bootstrap Icons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+  <!-- Cropper JS -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cropperjs/1.5.12/cropper.min.js"></script>
+  <script src="renderer.js"></script>
+  <script>
+    // Script para manejar el placeholder de imagen
+    document.addEventListener('DOMContentLoaded', function() {
+      const image = document.getElementById('image');
+      const imagePlaceholder = document.getElementById('image-placeholder');
+      
+      // Ocultar placeholder cuando hay una imagen
+      image.onload = function() {
+        if (image.src && image.src !== window.location.href) {
+          imagePlaceholder.style.display = 'none';
+          image.style.display = 'block';
+        }
+      };
+      
+      // Mostrar placeholder inicialmente
+      if (!image.src || image.src === window.location.href) {
+        image.style.display = 'none';
+        imagePlaceholder.style.display = 'block';
+      }
+    });
+
+    // Manejar la visualización de imágenes en el modal
+    document.addEventListener('DOMContentLoaded', function() {
+      // Configurar el modal cuando se abre
+      const modalImagen = document.getElementById('modalImagen');
+      if (modalImagen) {
+        modalImagen.addEventListener('show.bs.modal', function(event) {
+          const button = event.relatedTarget; // Botón que activó el modal
+          const imagenSrc = button.getAttribute('data-imagen');
+          
+          // Actualizar la imagen en el modal
+          const imagenModal = document.getElementById('imagenModal');
+          const descargarBtn = document.getElementById('descargarImagen');
+          
+          if (imagenSrc) {
+            imagenModal.src = imagenSrc;
+            descargarBtn.href = imagenSrc;
+            
+            // Obtener el nombre del archivo para el atributo download
+            const fileName = imagenSrc.split('/').pop() || 'imagen_formulario.png';
+            descargarBtn.setAttribute('download', fileName);
+          }
+        });
+        
+        // Limpiar la imagen cuando se cierra el modal
+        modalImagen.addEventListener('hidden.bs.modal', function() {
+          const imagenModal = document.getElementById('imagenModal');
+          imagenModal.src = '';
+        });
+      }
+    });
+
+  </script>
+</body>
+</html>

@@ -1,0 +1,511 @@
+{
+  "formularios": [
+    {
+      "id": 1,
+      "fecha": "2025-07-13T18:19:15.612Z",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "|",
+            "Pp 1100.00",
+            "Tipo Precio Ti",
+            "AMBOS",
+            "Servicio Se",
+            "2",
+            "Cantidad de (num) Ca",
+            "medialunas me"
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            "tazon: ..... Panel: 11",
+            "1: 2023 M:4 V:1",
+            "Je] Precio",
+            "rvicio",
+            "intidad de (num)",
+            "adialunas"
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:5 V:1",
+            "Tipo ) Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "�"
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:6 Vit",
+            "10 / Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "4"
+          ]
+        },
+        {
+          "seccion": 5,
+          "lineas": [
+            "Ri",
+            "A:",
+            "4",
+            "Ti",
+            "Se",
+            "C:",
+            "_M"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "fecha": "2025-07-13T18:42:40.404Z",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:4 V:1",
+            "Tipo Precio: 1250",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas"
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:5 V:1",
+            "Tipo Precio 1350",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "�"
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:6 V:1",
+            "Tipo Precio 1400",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "4"
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:7 V: 1",
+            "Tipo Precio 1600",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "fecha": "2025-12-15T17:53:26.538Z",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: Panel: 11 Razon: ..... Panel: 11",
+            "A: 2023M:2 V: 1 A: 2023 M:4 V:1",
+            "P 1100.00 � 230",
+            "Tipo Precio Tipo Precio",
+            "AMBOS",
+            "Servicio Servicio",
+            "2",
+            "Cantidad de (num) Cantidad de (num)",
+            "medialunas medialunas"
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:5 V:1",
+            "Tipo ) Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "f"
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:6 V:1",
+            "e / Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas"
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:7 V: 1",
+            "� A : Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "%"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "fecha": "2025-12-28T23:23:06.128Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202512282022.png"
+    },
+    {
+      "id": 5,
+      "fecha": "2025-12-28T23:29:22.330Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202512282027.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "| A: 2023 M:7 v:1",
+            "� Y : Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "fecha": "2025-12-29T00:58:12.416Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202512282157.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: Panel:",
+            "A: 2023M:2 V: 1",
+            "P 1100.01",
+            "Tipo Precio",
+            "AMBOS",
+            "Servicio",
+            "Cantidad de (num",
+            "medialunas"
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            "111 Razon: ..... Panel: 11",
+            "A: 2023 M:4 V:1",
+            "1250",
+            ">",
+            "Servicio",
+            "2",
+            ") Cantidad de (num)",
+            "medialunas"
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:5 V:1t",
+            "1350",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "�"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "fecha": "2025-12-29T01:33:19.597Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202512282233.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: Panel:",
+            "A: 2023M:2 V: 1",
+            "P 1100.01",
+            "Tipo Precio",
+            "AMBOS",
+            "Servicio",
+            "Cantidad de (num",
+            "medialunas"
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            "111 Razon: ..... Panel: 11",
+            "A: 2023 M:4 V:1",
+            "Tipo Precio",
+            ">",
+            "Servicio",
+            "2",
+            ") Cantidad de (num)",
+            "medialunas"
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:5 V:1",
+            "Tipo ) Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "�"
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:6 V:1",
+            "e / Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "4"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "fecha": "2025-12-29T01:55:32.741Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202512282255.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:6 V:1",
+            "e / Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas"
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:7 V: 1",
+            "� A : Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas",
+            "7"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "fecha": "2025-12-29T01:57:05.092Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202512282256.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:6 V:1",
+            "Lo / Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas"
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:7 v:1",
+            "k A : Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "fecha": "2025-12-29T02:00:27.588Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202512282300.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:7  V:1",
+            "bo A E Precio",
+            "Servicio"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "fecha": "2025-12-29T02:04:41.507Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202512282304.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            "Razon: ..... Panel: 11",
+            "A: 2023 M:4 V:1 |",
+            "Tipo Precio",
+            "Servicio",
+            "Cantidad de (num)",
+            "medialunas"
+          ]
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "fecha": "2026-02-09T23:30:40.854Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602092029.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": "Razon: Panel: 11 Razon: ..... Panel: 11",
+              "score": 0.7693049007854742
+            },
+            {
+              "texto": "1100.00",
+              "score": 0.46836462880858165
+            },
+            {
+              "texto": "Tipo Precio Tipo Precio",
+              "score": 0.42478714867517087
+            },
+            {
+              "texto": "AMBOS",
+              "score": 0.4104694660289594
+            },
+            {
+              "texto": "Servicio Servicio",
+              "score": 0.41305260923318543
+            },
+            {
+              "texto": "2",
+              "score": 0.9366313141913996
+            },
+            {
+              "texto": "Cantidad de (num) Cantidad de (num)",
+              "score": 0.8898379084255963
+            }
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel: 11",
+              "score": 0.5960934853990807
+            },
+            {
+              "texto": "A: 2023 M:5 V:1",
+              "score": 0.6643321296513263
+            },
+            {
+              "texto": "1230",
+              "score": 0.2324510854847257
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.3512047270642489
+            },
+            {
+              "texto": "Cantidad de (num)",
+              "score": 0.39771116139525486
+            }
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel: 11",
+              "score": 0.8939387616153323
+            },
+            {
+              "texto": "A: 2023 M:6 V:1",
+              "score": 0.6003497954107728
+            },
+            {
+              "texto": "1 / Precio",
+              "score": 0.34879030480034134
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.6208754023737459
+            },
+            {
+              "texto": "Cantidad de (num)",
+              "score": 0.45697315935047134
+            }
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel: 11",
+              "score": 0.8283647587563985
+            },
+            {
+              "texto": "A: 2023 M:7 v:1",
+              "score": 0.7911876935842308
+            },
+            {
+              "texto": "-k. f po",
+              "score": 0.02017129756323688
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.19910800333751966
+            },
+            {
+              "texto": "Cantidad de (num)",
+              "score": 0.3164011720491464
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
