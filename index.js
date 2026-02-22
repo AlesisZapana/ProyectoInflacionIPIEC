@@ -75,13 +75,11 @@ ipcMain.handle('guardar-formulario', async (event, datos) => {
 
 ipcMain.handle('obtener-formularios', async () => {
   const db = await initDB();
-  debugger;
   console.log(db.data)
   return db.data.formularios || [];
 });
 
 ipcMain.handle('editar-formulario', async (event, formularioEditado) => {
-  debugger;
   const db = await initDB();
   const dbEstr = await initDBEstructurada();
   console.log(dbEstr);

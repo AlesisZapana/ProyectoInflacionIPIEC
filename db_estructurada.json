@@ -6460,6 +6460,26 @@
         }
       ],
       "estado": "Confirmado"
+    },
+    {
+      "id": 1771735696406,
+      "tipo": "Bar y restaurante",
+      "fechaCarga": "2026-02-22T04:48:16.406Z",
+      "producto": "Pizza",
+      "imagen": "",
+      "periodos": [
+        {
+          "anio": 2024,
+          "mes": 2,
+          "valor": 2900,
+          "tipo": "Bar y restaurante",
+          "textoOriginal": "",
+          "origen": "manual",
+          "confianza": 1,
+          "lineasOCR": []
+        }
+      ],
+      "estado": "Confirmado"
     }
   ]
 }

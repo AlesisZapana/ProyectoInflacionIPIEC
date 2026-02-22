@@ -1,15 +1,5 @@
-Razon: ..... Panel: 11
-A: 2023 M:5 V:1
-Tipo ) Precio
-Servicio
-Cantidad de (num)
-medialunas
-y Precio
-Servicio
-Tipo Precio
-Servicio
-pte >
-Tipo Precio
-_Variante
-Tipo Precio
-Menú
+: Razón
+—
+AN
+——
+A

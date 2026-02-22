@@ -1,16 +1,3 @@
-Razon: ..... Panel: 11
-A: 2023 M:7 v:1
--£. A pa
-Servicio
-Cantidad de (num)
-medialunas
-Pp Precio
-Servicio
-y Precio
-Servicio
-Pf 3550 -
-Tipo Precio
-Variante
-pz 4on:
-Tip Precio
-Menú
+Supervision
+|
+¡

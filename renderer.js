@@ -32,23 +32,6 @@ function ejecutarArchivoPython(ruta) {
   });
 }
 
-function ejecutarArchivoRobot(rutaRobot) {
-  return new Promise((resolve, reject) => {
-    const comando = `robot "${rutaRobot}"`;
-    exec(comando, (error, stdout, stderr) => {
-      if (error) {
-        reject(`Error ejecutando robot: ${error.message}`);
-        return;
-      }
-      if (stderr) {
-        reject(`Stderr robot: ${stderr}`);
-        return;
-      }
-      resolve(stdout.trim());
-    });
-  });
-}
-
 
 let cropper;
 
@@ -283,27 +266,6 @@ document.getElementById('cropButton').addEventListener('click', () => {
 });
 
 
-// Llama a esta función con la imagen recortada en base64
-/*document.getElementById("btnPython").addEventListener("click", async () => {
-
-  try {
-
-    ipcRenderer.send('show-overlay');
-    //const results = await ejecutarArchivoPython();
-
-    //console.log(results);
-    const rutaRobot = path.join(__dirname, 'abrirCalculadora.robot');
-
-    //ejecutarArchivoRobot(rutaRobot);
-
-    ipcRenderer.send('hide-overlay');
-    //overlay.remove();
-
-  } catch (error) {
-    console.error("Error:", error);
-  }
-}); 
-*/
 function obtenerFormulariosFiltrados(formularios) {
   const fechaDesde = document.getElementById("fechaDesde").value;
   const fechaHasta = document.getElementById("fechaHasta").value;
