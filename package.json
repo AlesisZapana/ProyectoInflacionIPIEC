@@ -16,6 +16,7 @@
   "dependencies": {
     "chart.js": "^4.5.1",
     "cropperjs": "^1.6.2",
+    "fuse.js": "^7.1.0",
     "lodash": "^4.17.21",
     "lowdb": "^7.0.1"
   }

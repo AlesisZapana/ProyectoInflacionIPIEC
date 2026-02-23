@@ -1,21 +1,48 @@
 const { ipcRenderer } = require("electron");
+const Fuse = require("fuse.js");
 
+const options = {
+  includeScore: true,
+  //más bajo, más estricto
+  threshold: 0.25,
+  keys: ["valor"],
+  ignoreLocation: true,
+  minMatchCharLength: 3,
+
+};
+
+let diccionario = [];
+let fuse = null;
+
+document.addEventListener("DOMContentLoaded", async () => {
+  await cargarFormularios();
+  configurarEventos();
+  diccionario=construirDiccionario()
+  fuse = new Fuse(diccionario, options);
+
+});
+
+
+function normalizar(texto) {
+  return texto
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .toLowerCase()
+    .replace(/[^a-z0-9\s]/g, "")
+    .trim();
+}
 // ===============================
 // ESTADO GLOBAL DE LA VISTA
 // ===============================
 
 let formularios = [];
 let formularioEditandoIndex = null;
-
-
+let formulariosNormalizados = [];
 // ===============================
 // INICIALIZACIÓN
 // ===============================
 
-document.addEventListener("DOMContentLoaded", async () => {
-  await cargarFormularios();
-  configurarEventos();
-});
+
 
 
 // ===============================
@@ -26,7 +53,7 @@ async function cargarFormularios() {
   try {
     //formularios = await window.electronAPI.obtenerFormularios(); 
     formularios = await ipcRenderer.invoke("obtener-formularios");
-
+    formulariosNormalizados = await ipcRenderer.invoke("obtener-formularios-normalizados");
     renderTabla(formularios);
 
   } catch (error) {
@@ -34,6 +61,31 @@ async function cargarFormularios() {
   }
 }
 
+function construirDiccionario() {
+  debugger;
+  const productos = formulariosNormalizados.map(r => r.producto);
+  const tipos = formulariosNormalizados.map(r => r.tipo);
+
+  const unicos = [...new Set([...productos, ...tipos])];
+
+  return unicos.map(p => ({
+    valor: p,
+    tipo: productos.includes(p) ? "producto" : "tipo"
+  }));
+}
+
+function clasificarNumero(texto) {
+
+  if (!/^\d+$/.test(texto)) return null;
+
+  const n = parseInt(texto);
+
+  if (n >= 1900 && n <= 2100) return "anio";
+  if (n >= 1 && n <= 12) return "mes";
+  if (n > 12) return "valor";
+
+  return null;
+}
 
 // ===============================
 // CONFIGURACIÓN DE EVENTOS
@@ -291,6 +343,51 @@ function abrirModalEdicion(index) {
     bloque.innerHTML = `<h6>Sección ${sec.seccion}</h6>`;
 
     sec.lineas.forEach((l, i) => {
+      const textoOriginal = (l.texto ?? "").trim();
+      const textoLimpio = normalizar(l.texto);
+      
+      const tipoNumerico = clasificarNumero(textoOriginal);
+      debugger;
+      let clasificacion = "";
+      let sugerencia = "";
+      if (tipoNumerico) {
+
+        clasificacion = tipoNumerico;
+        sugerencia = textoOriginal;
+
+      }else{
+
+        let mejorResultado = null;
+        let mejorScore = 1;
+  
+        const resultadoFrase = fuse.search(textoLimpio);
+  
+        if (resultadoFrase.length) {
+          mejorResultado = resultadoFrase[0];
+          mejorScore = resultadoFrase[0].score;
+        }
+  
+        const palabras = textoLimpio.split(" ");
+  
+        palabras.forEach(p => {
+          if (p.length < 3) return; // evitar ruido
+  
+          const res = fuse.search(p);
+          debugger;
+          if (res.length && res[0].score < mejorScore) {
+            mejorScore = res[0].score;
+            mejorResultado = res[0];
+          }
+        });
+  
+  
+  
+        if (mejorResultado && mejorScore < 0.35) {
+          sugerencia = mejorResultado.item.valor;
+          clasificacion = mejorResultado.item.tipo;
+        }
+      }
+
 
       bloque.innerHTML += `
         <div class="row g-2 mb-2">
@@ -306,12 +403,11 @@ function abrirModalEdicion(index) {
               data-seccion="${sec.seccion}"
               data-linea="${i}">
               <option value="">-- Clasificar --</option>
-              <option value="anio">Año</option>
-              <option value="mes">Mes</option>
-              <option value="valor">Valor</option>
-              <option value="producto">Producto</option>
-              <option value="tipo">Tipo</option>
-            </select>
+              <option value="anio" ${clasificacion === 'anio' ? 'selected' : ''}>Año</option>
+              <option value="mes" ${clasificacion === 'mes' ? 'selected' : ''}>Mes</option>
+              <option value="valor" ${clasificacion === 'valor' ? 'selected' : ''}>Valor</option>
+              <option value="producto" ${clasificacion === 'producto' ? 'selected' : ''}>Producto</option>
+              <option value="tipo" ${clasificacion === 'tipo' ? 'selected' : ''}>Tipo</option>            </select>
           </div>
         </div>
       `;

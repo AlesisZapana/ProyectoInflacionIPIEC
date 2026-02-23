@@ -791,7 +791,7 @@
       "id": 16,
       "tipo": "Fruteria y Verduleria",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Ajo (2 cabezas)",
+      "producto": "Ajo (dos cabezas)",
       "imagen": "",
       "periodos": [
         {
@@ -1211,7 +1211,7 @@
       "id": 23,
       "tipo": "Fruteria y Verduleria",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Carbón Bolsa 5Kg",
+      "producto": "Carbón Bolsa cinco Kg",
       "imagen": "",
       "periodos": [
         {
@@ -1271,7 +1271,7 @@
       "id": 24,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Pan de Viena (Envasado 200Gr)",
+      "producto": "Pan de Viena (Envasado)",
       "imagen": "",
       "periodos": [
         {
@@ -1331,7 +1331,7 @@
       "id": 26,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Rebozador ( 450 Gr)",
+      "producto": "Rebozador ( medio kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -1918,7 +1918,7 @@
       "id": 36,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Bocaditos de pollo rebozados (caja 200gr)",
+      "producto": "Bocaditos de pollo rebozados (caja)",
       "imagen": "",
       "periodos": [
         {
@@ -1978,7 +1978,7 @@
       "id": 37,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Salchichas tipo viena (6 u.)",
+      "producto": "Salchichas tipo viena (seis)",
       "imagen": "",
       "periodos": [
         {
@@ -2218,7 +2218,7 @@
       "id": 41,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Aceite girasol (900cc a 1500cc)",
+      "producto": "Aceite girasol",
       "imagen": "",
       "periodos": [
         {
@@ -2278,7 +2278,7 @@
       "id": 42,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Aceite de maiz (890cc a 1000cc)",
+      "producto": "Aceite de maiz",
       "imagen": "",
       "periodos": [
         {
@@ -2338,7 +2338,7 @@
       "id": 43,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Aceite de oliva (500cc)",
+      "producto": "Aceite de oliva (medio litro)",
       "imagen": "",
       "periodos": [
         {
@@ -2518,7 +2518,7 @@
       "id": 46,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Huevos (6 unidades)",
+      "producto": "Huevos (seis unidades)",
       "imagen": "",
       "periodos": [
         {
@@ -2818,7 +2818,7 @@
       "id": 51,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Porotos secos (500 gr)",
+      "producto": "Porotos secos (medio kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -2912,7 +2912,7 @@
       "id": 53,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Milanesa de soja (4 u.)",
+      "producto": "Milanesa de soja (cuatro unidades)",
       "imagen": "",
       "periodos": [
         {
@@ -2972,7 +2972,7 @@
       "id": 54,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Azucar (1kg)",
+      "producto": "Azucar (kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -3066,7 +3066,7 @@
       "id": 56,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Dulce de membrillo (500gr)",
+      "producto": "Dulce de membrillo (medio kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -3113,7 +3113,7 @@
       "id": 57,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Mermelada (500 gr)",
+      "producto": "Mermelada (medio kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -3160,7 +3160,7 @@
       "id": 58,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Miel (500 gr)",
+      "producto": "Miel (medio kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -3207,7 +3207,7 @@
       "id": 59,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Chocolotada en polvo (400gr)",
+      "producto": "Chocolotada en polvo (medio kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -3254,7 +3254,7 @@
       "id": 60,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Oregano (50gr)",
+      "producto": "Oregano (bolsita)",
       "imagen": "",
       "periodos": [
         {
@@ -3314,7 +3314,7 @@
       "id": 61,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Sal fina (500gr)",
+      "producto": "Sal fina (medio kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -3374,7 +3374,7 @@
       "id": 62,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Sal gruesa (1kg)",
+      "producto": "Sal gruesa (kilo)",
       "imagen": "",
       "periodos": [
         {
@@ -3421,7 +3421,7 @@
       "id": 63,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Mayonesa (250gr)",
+      "producto": "Mayonesa",
       "imagen": "",
       "periodos": [
         {
@@ -3481,7 +3481,7 @@
       "id": 64,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Mostaza (250gr)",
+      "producto": "Mostaza",
       "imagen": "",
       "periodos": [
         {
@@ -3541,7 +3541,7 @@
       "id": 65,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Ketchup (250gr)",
+      "producto": "Ketchup ()",
       "imagen": "",
       "periodos": [
         {
@@ -3601,7 +3601,7 @@
       "id": 66,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Yerba mate (500gr)",
+      "producto": "Yerba mate ()",
       "imagen": "",
       "periodos": [
         {
@@ -3661,7 +3661,7 @@
       "id": 67,
       "tipo": "Almacen General",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Yerba mate saquitos (25 u.)",
+      "producto": "Yerba mate saquitos (caja)",
       "imagen": "",
       "periodos": [
         {
@@ -4339,7 +4339,7 @@
       "id": 77,
       "tipo": "Bar y restaurante",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Agua mineral (500cc)",
+      "producto": "Agua mineral (medio litro)",
       "imagen": "",
       "periodos": [
         {
@@ -4631,7 +4631,7 @@
       "id": 81,
       "tipo": "Bar y restaurante",
       "fechaCarga": "2026-02-13T13:31:54.731Z",
-      "producto": "Desayuno (cafe con 2/3 medialunas)",
+      "producto": "Desayuno (cafe con medialunas)",
       "imagen": "",
       "periodos": [
         {
