@@ -154,6 +154,71 @@ ipcMain.handle('editar-formulario', async (event, formularioEditado) => {
   return { success: true };
 });
 
+ipcMain.handle('guardar-formulario-estructurado', async (event, formularioEditado) => {
+  const dbEstr = await initDBEstructurada();
+  console.log(dbEstr);
+
+
+  //guarda en la base estructurada
+  var lista = formularioEditado.registros;
+  for (let i = 0; i < lista.length; i++) {
+    
+    const c = lista[i];
+  
+    if (c && c.anio && c.mes && c.valor) {
+  
+      const anio = parseInt(c.anio);
+      const mes = parseInt(c.mes);
+      const valor = parseFloat(c.valor);
+  
+      const producto = c.producto || "Sin producto";
+      const tipo = c.tipo || "Sin tipo";
+  
+      // buscar
+      let registro = dbEstr.data.formularios.find(r =>
+        r.producto === producto &&
+        r.tipo === tipo
+      );
+  
+      if (!registro) {
+        // crear nuevo registro
+        registro = {
+          id: Date.now(),
+          tipo,
+          fechaCarga: new Date().toISOString(),
+          producto,
+          imagen: "",
+          periodos: [],
+          estado: "Confirmado"
+        };
+  
+        dbEstr.data.formularios.push(registro);
+      }
+  
+      // verificar si ya existe el período
+      const periodoExistente = registro.periodos.find(p =>
+        p.anio === anio && p.mes === mes
+      );
+  
+      if (!periodoExistente) {
+        registro.periodos.push({
+          anio,
+          mes,
+          valor,
+          tipo,
+          textoOriginal: "",
+          origen: "manual",
+          confianza: 1,
+          lineasOCR: []
+        });
+      }
+    }
+  }
+
+  await dbEstr.write();
+  return { success: true };
+});
+
 ipcMain.handle("obtener-formularios-normalizados", async () => {
   try {
     const dbEstr = await initDBEstructurada();

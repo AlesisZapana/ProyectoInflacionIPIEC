@@ -2150,6 +2150,16 @@
             "Tipo Precio",
             "Marca"
           ]
+        },
+        {
+          "anio": 2024,
+          "mes": 2,
+          "valor": 2900,
+          "tipo": "Almacen General",
+          "textoOriginal": "",
+          "origen": "manual",
+          "confianza": 1,
+          "lineasOCR": []
         }
       ],
       "estado": "Confirmado"
@@ -6472,6 +6482,26 @@
           "anio": 2024,
           "mes": 2,
           "valor": 2900,
+          "tipo": "Bar y restaurante",
+          "textoOriginal": "",
+          "origen": "manual",
+          "confianza": 1,
+          "lineasOCR": []
+        },
+        {
+          "anio": 2024,
+          "mes": 3,
+          "valor": 2900,
+          "tipo": "Bar y restaurante",
+          "textoOriginal": "",
+          "origen": "manual",
+          "confianza": 1,
+          "lineasOCR": []
+        },
+        {
+          "anio": 2024,
+          "mes": 4,
+          "valor": 3500,
           "tipo": "Bar y restaurante",
           "textoOriginal": "",
           "origen": "manual",

@@ -1,5 +1,10 @@
 const { ipcRenderer } = require("electron");
 const Fuse = require("fuse.js");
+const PNotify = require('@pnotify/core');
+const PNotifyBootstrap4 = require('@pnotify/bootstrap4');
+require('@pnotify/bootstrap4');
+PNotify.defaultModules.set(PNotifyBootstrap4, {});
+PNotify.defaults.styling = 'bootstrap4';
 
 const options = {
   includeScore: true,
@@ -62,7 +67,6 @@ async function cargarFormularios() {
 }
 
 function construirDiccionario() {
-  debugger;
   const productos = formulariosNormalizados.map(r => r.producto);
   const tipos = formulariosNormalizados.map(r => r.tipo);
 
@@ -80,11 +84,73 @@ function clasificarNumero(texto) {
 
   const n = parseInt(texto);
 
-  if (n >= 1900 && n <= 2100) return "anio";
+  if (n >= 2020 && n <= 2029) return "anio";
   if (n >= 1 && n <= 12) return "mes";
   if (n > 12) return "valor";
 
   return null;
+}
+
+function extraerEntidades(textoOriginal, fuse) {
+
+  const entidades = [];
+
+  // extraer números
+  const numeros = textoOriginal.match(/\d+/g);
+  debugger;
+  if (numeros) {
+    numeros.forEach(n => {
+      const tipo = clasificarNumero(n);
+      if (tipo) {
+        entidades.push({
+          tipo,
+          valor: n,
+          confianza: 1
+        });
+      }
+    });
+  }
+
+  // analizar texto sin números
+  const textoSinNumeros = textoOriginal.replace(/\d+/g, "").trim();
+  const textoLimpio = normalizar(textoSinNumeros);
+
+  if (textoLimpio.length > 2) {
+
+    let mejorResultado = null;
+    let mejorScore = 1;
+
+    const resultadoFrase = fuse.search(textoLimpio);
+
+    if (resultadoFrase.length) {
+      mejorResultado = resultadoFrase[0];
+      mejorScore = resultadoFrase[0].score;
+    }
+
+    //buscar por palabras
+    const palabras = textoLimpio.split(" ");
+ 
+    palabras.forEach(p => {
+      if (p.length < 3) return; // evitar ruido
+
+      const res = fuse.search(p);
+
+      if (res.length && res[0].score < mejorScore) {
+        mejorScore = res[0].score;
+        mejorResultado = res[0];
+      }
+    });
+ 
+    if (mejorResultado && mejorScore < 0.35) {
+      entidades.push({
+        tipo: mejorResultado.item.tipo,
+        valor: mejorResultado.item.valor,
+        confianza: 1 - mejorScore
+      });
+    }
+  }
+
+  return entidades;
 }
 
 // ===============================
@@ -344,75 +410,95 @@ function abrirModalEdicion(index) {
 
     sec.lineas.forEach((l, i) => {
       const textoOriginal = (l.texto ?? "").trim();
-      const textoLimpio = normalizar(l.texto);
-      
-      const tipoNumerico = clasificarNumero(textoOriginal);
-      debugger;
-      let clasificacion = "";
-      let sugerencia = "";
-      if (tipoNumerico) {
 
-        clasificacion = tipoNumerico;
-        sugerencia = textoOriginal;
+      // extras + de una entidad
+      const entidades = extraerEntidades(textoOriginal, fuse);
 
-      }else{
+      // visualización de entidades detectadas
+      let entidadesHTML = "";
 
-        let mejorResultado = null;
-        let mejorScore = 1;
-  
-        const resultadoFrase = fuse.search(textoLimpio);
-  
-        if (resultadoFrase.length) {
-          mejorResultado = resultadoFrase[0];
-          mejorScore = resultadoFrase[0].score;
-        }
-  
-        const palabras = textoLimpio.split(" ");
-  
-        palabras.forEach(p => {
-          if (p.length < 3) return; // evitar ruido
-  
-          const res = fuse.search(p);
-          debugger;
-          if (res.length && res[0].score < mejorScore) {
-            mejorScore = res[0].score;
-            mejorResultado = res[0];
-          }
+      if (entidades.length > 0) {
+
+        entidadesHTML += `
+          <div class="mt-2 p-2 bg-light border rounded">
+            <small><strong>Entidades detectadas:</strong></small>
+        `;
+
+        entidades.forEach((e, index) => {
+
+          entidadesHTML += `
+            <div class="d-flex align-items-center mb-1 entidad-item">
+
+              <input type="text"
+                class="form-control form-control-sm me-2 entidad-valor"
+                value="${e.valor}">
+
+              <select class="form-select form-select-sm me-2 entidad-tipo">
+                <option value="producto" ${e.tipo==='producto'?'selected':''}>Producto</option>
+                <option value="anio" ${e.tipo==='anio'?'selected':''}>Año</option>
+                <option value="mes" ${e.tipo==='mes'?'selected':''}>Mes</option>
+                <option value="valor" ${e.tipo==='valor'?'selected':''}>Valor</option>
+                <option value="tipo" ${e.tipo==='tipo'?'selected':''}>Tipo</option>
+              </select>
+
+              <small class="text-muted me-2">
+                ${e.confianza.toFixed(2)}
+              </small>
+
+              <button type="button"
+                class="btn btn-sm btn-outline-danger btn-eliminar-entidad">
+                ✕
+              </button>
+
+            </div>
+          `;
         });
-  
-  
-  
-        if (mejorResultado && mejorScore < 0.35) {
-          sugerencia = mejorResultado.item.valor;
-          clasificacion = mejorResultado.item.tipo;
-        }
+
+        entidadesHTML += `
+          <div class="mt-2">
+            <button type="button"
+              class="btn btn-sm btn-outline-secondary btn-agregar-entidad">
+              ➕ Agregar entidad
+            </button>
+          </div>
+
+        </div>
+        `;
+
       }
 
-
+      // renderizar línea original + entidades debajo
       bloque.innerHTML += `
-        <div class="row g-2 mb-2">
-          <div class="col-8">
+        <div class="row g-2 mb-3">
+          <div class="col-12">
             <input type="text" class="form-control"
               data-seccion="${sec.seccion}"
               data-linea="${i}"
-              value="${l.texto ?? ""}">
+              value="${textoOriginal}">
           </div>
 
-          <div class="col-4">
-            <select class="form-select"
-              data-seccion="${sec.seccion}"
-              data-linea="${i}">
-              <option value="">-- Clasificar --</option>
-              <option value="anio" ${clasificacion === 'anio' ? 'selected' : ''}>Año</option>
-              <option value="mes" ${clasificacion === 'mes' ? 'selected' : ''}>Mes</option>
-              <option value="valor" ${clasificacion === 'valor' ? 'selected' : ''}>Valor</option>
-              <option value="producto" ${clasificacion === 'producto' ? 'selected' : ''}>Producto</option>
-              <option value="tipo" ${clasificacion === 'tipo' ? 'selected' : ''}>Tipo</option>            </select>
+          <div class="col-12">
+            ${entidadesHTML}
           </div>
         </div>
       `;
     });
 
+    const tablaId = `tabla-${sec.seccion}-${1}-${Date.now()}`;
+
+    bloque.innerHTML +=`
+    <div class="mt-2">
+            <button type="button"
+              class="btn btn-sm btn-primary btn-preparar-registros"
+              data-tabla="${tablaId}">
+              Actualizar Datos
+            </button>
+          </div>
+
+          <div class="mt-2 contenedor-tabla"
+              id="${tablaId}">
+          </div>
+    `
     body.appendChild(bloque);
   });
 
@@ -422,7 +508,271 @@ function abrirModalEdicion(index) {
   modal.show();
 }
 
+document.addEventListener("click", function(e) {
 
+  if (e.target.classList.contains("btn-agregar-entidad")) {
+
+    // Buscar el contenedor gris actual
+    const contenedor = e.target.closest(".border");
+
+    if (!contenedor) return;
+
+    const nuevaEntidadHTML = `
+      <div class="d-flex align-items-center mb-1 entidad-item">
+
+        <input type="text"
+          class="form-control form-control-sm me-2 entidad-valor"
+          value="">
+
+        <select class="form-select form-select-sm me-2 entidad-tipo">
+          <option value="producto">Producto</option>
+          <option value="anio">Año</option>
+          <option value="mes">Mes</option>
+          <option value="valor">Valor</option>
+          <option value="tipo">Tipo</option>
+        </select>
+
+        <small class="text-muted me-2">
+          manual
+        </small>
+
+        <button type="button"
+          class="btn btn-sm btn-outline-danger btn-eliminar-entidad">
+          ✕
+        </button>
+
+      </div>
+    `;
+
+    // Insertar antes del botón agregar
+    e.target.closest(".mt-2").insertAdjacentHTML("beforebegin", nuevaEntidadHTML);
+
+  }
+
+});
+
+document.addEventListener("click", function(e) {
+
+  if (e.target.classList.contains("btn-eliminar-entidad")) {
+
+    const item = e.target.closest(".entidad-item");
+
+    if (item) {
+      item.remove();
+    }
+
+  }
+
+});
+
+document.addEventListener("click", function(e) {
+
+  if (e.target.classList.contains("btn-preparar-registros")) {
+
+    const tablaId = e.target.dataset.tabla;
+    const contenedor = document.getElementById(tablaId);
+
+    const bloqueSeccion = document; // e.target.closest(".mb-3");
+
+    const entidades = [];
+
+    bloqueSeccion.querySelectorAll(".entidad-item").forEach(item => {
+
+      const valor = item.querySelector(".entidad-valor").value;
+      const tipo = item.querySelector(".entidad-tipo").value;
+
+      entidades.push({ tipo, valor });
+
+    });
+
+    generarTablaEditable(contenedor, entidades, tablaId);
+  }
+
+});
+
+function generarTablaEditable(contenedor, entidades, tablaId) {
+
+  if (!entidades.length) return;
+
+  // separar por tipo
+  const porTipo = {
+    producto: entidades.filter(e => e.tipo === "producto"),
+    anio: entidades.filter(e => e.tipo === "anio"),
+    mes: entidades.filter(e => e.tipo === "mes"),
+    valor: entidades.filter(e => e.tipo === "valor"),
+    tipo: entidades.filter(e => e.tipo === "tipo")
+  };
+
+  contenedor.innerHTML = `
+    <div class="border rounded p-2 bg-white">
+
+      <table class="table table-sm mb-2">
+        <thead>
+          <tr>
+            <th>Producto</th>
+            <th>Año</th>
+            <th>Mes</th>
+            <th>Valor</th>
+            <th>Tipo</th>
+            <th></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <button class="btn btn-sm btn-secondary btn-agregar-fila"
+        data-tabla="${tablaId}">
+        ➕ Agregar Fila
+      </button>
+
+      <button class="btn btn-sm btn-success btn-confirmar-tabla"
+        data-tabla="${tablaId}">
+        💾 Guardar Entidades
+      </button>
+
+    </div>
+  `;
+
+  agregarFila(tablaId, porTipo);
+}
+
+function agregarFila(tablaId, porTipo) {
+
+  const contenedor = document.getElementById(tablaId);
+  const tbody = contenedor.querySelector("tbody");
+
+  const select = (tipo) => {
+
+    const opciones = porTipo[tipo]
+      .map(e => `<option value="${e.valor}">${e.valor}</option>`)
+      .join("");
+
+    return `
+      <select class="form-select form-select-sm">
+        <option value="">--</option>
+        ${opciones}
+      </select>
+    `;
+  };
+
+  const fila = `
+    <tr>
+      <td>${select("producto")}</td>
+      <td>${select("anio")}</td>
+      <td>${select("mes")}</td>
+      <td>${select("valor")}</td>
+      <td>${select("tipo")}</td>
+      <td>
+        <button class="btn btn-sm btn-danger btn-eliminar-fila">✕</button>
+      </td>
+    </tr>
+  `;
+
+  tbody.insertAdjacentHTML("beforeend", fila);
+}
+
+document.addEventListener("click", function(e) {
+
+  if (e.target.classList.contains("btn-agregar-fila")) {
+
+    const tablaId = e.target.dataset.tabla;
+    const contenedor = document.getElementById(tablaId);
+
+    const selects = contenedor.querySelectorAll("tbody tr:first-child select");
+
+    if (!selects.length) return;
+
+    const porTipo = {
+      producto: [...selects[0].options].filter(o=>o.value).map(o=>({valor:o.value})),
+      anio: [...selects[1].options].filter(o=>o.value).map(o=>({valor:o.value})),
+      mes: [...selects[2].options].filter(o=>o.value).map(o=>({valor:o.value})),
+      valor: [...selects[3].options].filter(o=>o.value).map(o=>({valor:o.value})),
+      tipo: [...selects[4].options].filter(o=>o.value).map(o=>({valor:o.value}))
+    };
+
+    agregarFila(tablaId, porTipo);
+  }
+
+  if (e.target.classList.contains("btn-eliminar-fila")) {
+    e.target.closest("tr").remove();
+  }
+
+});
+
+document.addEventListener("click", async function(e) {
+
+  if (e.target.classList.contains("btn-confirmar-tabla")) {
+
+    const tablaId = e.target.dataset.tabla;
+    const contenedor = document.getElementById(tablaId);
+
+    const registros = [];
+
+    contenedor.querySelectorAll("tbody tr").forEach(tr => {
+
+      const selects = tr.querySelectorAll("select");
+
+      const registro = {
+        producto: selects[0].value,
+        anio: selects[1].value,
+        mes: selects[2].value,
+        valor: selects[3].value,
+        tipo: selects[4].value
+      };
+
+      if (
+        registro.producto &&
+        registro.anio &&
+        registro.mes &&
+        registro.valor &&
+        registro.tipo
+      ) {
+        registros.push(registro);
+      }
+
+    });
+
+    if (registros.length === 0) {
+      PNotify.notice({
+        title: "Sin datos",
+        text: "No hay registros para guardar.",
+        delay: 2000
+      });
+      return;
+    }
+
+    console.log("Registros finales:", registros);
+
+    try {
+
+      const res = await ipcRenderer.invoke(
+        "guardar-formulario-estructurado",
+        { registros }
+      );
+
+      PNotify.success({
+        text: `Se guardaron ${registros.length} registro(s) correctamente.`,
+        delay: 2000,
+      });
+
+      const tbody = contenedor.querySelector("tbody");
+      if (tbody) {
+        tbody.innerHTML = "";
+      }
+
+    } catch (error) {
+
+      console.error(error);
+      PNotify.error({
+        title: "Error",
+        text: "Ocurrió un error al guardar.",
+        delay: 2000
+      });
+
+    }
+  }
+
+});
 // ===============================
 // GUARDAR EDICIÓN (IPC)
 // ===============================
@@ -442,14 +792,14 @@ async function guardarEdicion() {
     const seccion = parseInt(inp.dataset.seccion);
     const linea = parseInt(inp.dataset.linea);
 
-    // 🔹 1. Actualizar texto dentro del objeto original
+    // Actualizar texto dentro del objeto original (datos brutos)
     const sec = formulario.datos.find(s => s.seccion == seccion);
 
     if (sec && sec.lineas[linea]) {
       sec.lineas[linea].texto = inp.value;
     }
 
-    // 🔹 2. Guardar clasificación si existe
+    // Guardar clasificación (si existe)
     const select = document.querySelector(
       `select[data-seccion="${seccion}"][data-linea="${linea}"]`
     );
@@ -460,10 +810,10 @@ async function guardarEdicion() {
 
   });
 
-  // 🔹 3. Marcar estado
+  //  cambiar estado
   formulario.estado = "Confirmado";
 
-  // 🔹 4. Enviar datos realmente modificados
+  // Enviar datos realmente modificados
   const res = await ipcRenderer.invoke(
       "editar-formulario",
       {
