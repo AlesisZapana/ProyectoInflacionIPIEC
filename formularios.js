@@ -36,16 +36,14 @@ function normalizar(texto) {
     .replace(/[^a-z0-9\s]/g, "")
     .trim();
 }
+
 // ===============================
-// ESTADO GLOBAL DE LA VISTA
+// INICIALIZACIÓN
 // ===============================
 
 let formularios = [];
 let formularioEditandoIndex = null;
 let formulariosNormalizados = [];
-// ===============================
-// INICIALIZACIÓN
-// ===============================
 
 
 
@@ -132,19 +130,6 @@ function extraerEntidades(textoOriginal, fuse) {
     //buscar por palabras
     const palabras = textoLimpio.split(" ");
  
-    /*
-    palabras.forEach(p => {
-      if (p.length < 3) return; // evitar ruido
-
-      const res = fuse.search(p);
-
-      if (res.length && res[0].score < mejorScore) {
-        mejorScore = res[0].score;
-        mejorResultado = res[0];
-      }
-    });
-  */
-
     palabras.forEach(p => {
 
       if (p.length < 3) return;
@@ -170,15 +155,7 @@ function extraerEntidades(textoOriginal, fuse) {
       yaAgregadas.add(candidato.item.valor.toLowerCase());
     });
 
-    /*
-    if (mejorResultado && mejorScore < 0.35) {
-      entidades.push({
-        tipo: mejorResultado.item.tipo,
-        valor: mejorResultado.item.valor,
-        confianza: 1 - mejorScore
-      });
-    }
-    */
+
   }
 
   return entidades;
@@ -342,7 +319,7 @@ function manejarEventosTabla(e) {
 function mostrarDetalle(index) {
   const formulario = formularios[index];
   console.log("Detalle:", formulario);
-  // Aquí podés insertar la lógica expandible
+  // Expande el renglón
 }
 
 function mostrarImagen(imgPath) {
@@ -355,7 +332,7 @@ function mostrarImagen(imgPath) {
     return;
   }
 
-  // En Electron las rutas locales necesitan file://
+  // En Electron las rutas locales necesitan el path
   img.src = `${imgPath}`;
   img.alt = "Imagen del formulario";
 }
@@ -381,7 +358,7 @@ function mostrarDetalle(index) {
   detalleRow.className = "fila-detalle";
 
   const detalleCell = document.createElement("td");
-  detalleCell.colSpan = 3; // Ajustar según cantidad de columnas
+  detalleCell.colSpan = 3; 
   detalleCell.className = "bg-light p-3";
 
   // Construir contenido expandible

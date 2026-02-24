@@ -7,8 +7,8 @@ let chart = null;
 document.addEventListener("DOMContentLoaded", async () => {
     formularios = await ipcRenderer.invoke("obtener-formularios-normalizados");
 
-    poblarSelectTipos();
-    poblarSelectProductos();
+    cargarSelectTipos();
+    cargarSelectProductos();
     aplicarFiltros();
 
 });
@@ -31,14 +31,16 @@ document.getElementById("btnExportarCSV").addEventListener("click", () => {
   a.click();
 });
 
-function poblarSelectTipos() {
+function cargarSelectTipos() {
 
     const select = document.getElementById("filtroTipo");
     select.innerHTML = '<option value="">Todos</option>';
 
     const tiposUnicos = [...new Set(formularios.map(f => f.tipo))];
 
-    tiposUnicos.forEach(tipo => {
+    tiposUnicos
+    .sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }))
+    .forEach(tipo => {
         const option = document.createElement("option");
         option.value = tipo;
         option.textContent = tipo;
@@ -47,7 +49,7 @@ function poblarSelectTipos() {
 }
 
 
-function poblarSelectProductos(tipoSeleccionado = "") {
+function cargarSelectProductos(tipoSeleccionado = "") {
 
     const select = document.getElementById("filtroProducto");
     select.innerHTML = '<option value="">Todos</option>';
@@ -60,7 +62,9 @@ function poblarSelectProductos(tipoSeleccionado = "") {
 
     const productosUnicos = [...new Set(productosFiltrados.map(f => f.producto))];
 
-    productosUnicos.forEach(prod => {
+    productosUnicos
+    .sort((a, b) => a.localeCompare(b, 'es', { sensitivity: 'base' }))
+    .forEach(prod => {
         const option = document.createElement("option");
         option.value = prod;
         option.textContent = prod;
@@ -70,7 +74,7 @@ function poblarSelectProductos(tipoSeleccionado = "") {
 }
 
 document.getElementById("filtroTipo").addEventListener("change", function() {
-    poblarSelectProductos(this.value);
+    cargarSelectProductos(this.value);
 });
 
 document.getElementById("btnFiltrar")
@@ -83,29 +87,40 @@ function aplicarFiltros() {
     const producto = document.getElementById("filtroProducto").value;
     const tipo = document.getElementById("filtroTipo").value;
     
+
+    let desdeNum = null;
+    let hastaNum = null;
+
+    if (desde) {
+        const [anioDesde, mesDesde] = desde.split("-");
+        desdeNum = parseInt(anioDesde) * 100 + parseInt(mesDesde);
+    }
+
+    if (hasta) {
+        const [anioHasta, mesHasta] = hasta.split("-");
+        hastaNum = parseInt(anioHasta) * 100 + parseInt(mesHasta);
+    }
+
     datosFiltrados = [];
 
     formularios.forEach(form => {
 
         // filtro por tipo
         if (tipo && form.tipo !== tipo) return;
-        
-        // filtro por producto
+
         if (producto && form.producto !== producto) return;
-
-        const fechaForm = new Date(form.fechaCarga);
-
-        // filtro fecha desde
-        if (desde && fechaForm < new Date(desde)) return;
-
-        // filtro fecha hasta
-        if (hasta && fechaForm > new Date(hasta + "T23:59:59")) return;
 
         // aplanar periodos
         form.periodos.forEach(periodo => {
 
+            const periodoNum = periodo.anio * 100 + periodo.mes;
+
+            if (desdeNum && periodoNum < desdeNum) return;
+
+            if (hastaNum && periodoNum > hastaNum) return;
+            
             datosFiltrados.push({
-                fecha: fechaForm.toLocaleDateString(),
+                fecha: `${periodo.mes}/${periodo.anio}`,
                 formulario: form.id,
                 producto: form.producto,
                 tipo: form.tipo,

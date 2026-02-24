@@ -501,6 +501,43 @@
         }
       ],
       "estado": "Pendiente"
+    },
+    {
+      "id": 8994,
+      "fecha": "2026-02-24T19:21:17.157Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602241616.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": ". de \" * S El",
+              "score": 0.034180736155548175
+            },
+            {
+              "texto": "Ravioles con salsa P 2150.00 L YA U SO P so 2) P 3500 P 3 Y So",
+              "score": 0.6388398326402203
+            },
+            {
+              "texto": "cons.fuera del hogar Tipo Precio Tipo Precio Tipo Precio Ti Precio Tipo Precio",
+              "score": 0.7842346893319174
+            },
+            {
+              "texto": "Con salsa de tomate.",
+              "score": 0.8998348177760644
+            },
+            {
+              "texto": "Servicio en mesa, con cubiertos y",
+              "score": 0.08537891286592614
+            },
+            {
+              "texto": "valilla no descartable.",
+              "score": 0.46468061462975374
+            }
+          ]
+        }
+      ],
+      "estado": "Pendiente"
     }
   ]
 }
