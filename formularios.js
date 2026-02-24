@@ -94,10 +94,11 @@ function clasificarNumero(texto) {
 function extraerEntidades(textoOriginal, fuse) {
 
   const entidades = [];
+  const yaAgregadas = new Set();
 
   // extraer números
   const numeros = textoOriginal.match(/\d+/g);
-  debugger;
+  //debugger;
   if (numeros) {
     numeros.forEach(n => {
       const tipo = clasificarNumero(n);
@@ -107,6 +108,7 @@ function extraerEntidades(textoOriginal, fuse) {
           valor: n,
           confianza: 1
         });
+        yaAgregadas.add(n.toLowerCase());
       }
     });
   }
@@ -130,6 +132,7 @@ function extraerEntidades(textoOriginal, fuse) {
     //buscar por palabras
     const palabras = textoLimpio.split(" ");
  
+    /*
     palabras.forEach(p => {
       if (p.length < 3) return; // evitar ruido
 
@@ -140,7 +143,34 @@ function extraerEntidades(textoOriginal, fuse) {
         mejorResultado = res[0];
       }
     });
- 
+  */
+
+    palabras.forEach(p => {
+
+      if (p.length < 3) return;
+
+      const resultados = fuse.search(p);
+
+      if (!resultados.length) return;
+
+      // buscar el mejor que no esté repetido
+      const candidato = resultados.find(r =>
+        r.score < 0.35 &&
+        !yaAgregadas.has(r.item.valor.toLowerCase())
+      );
+
+      if (!candidato) return;
+
+      entidades.push({
+        tipo: candidato.item.tipo,
+        valor: candidato.item.valor,
+        confianza: 1 - candidato.score
+      });
+
+      yaAgregadas.add(candidato.item.valor.toLowerCase());
+    });
+
+    /*
     if (mejorResultado && mejorScore < 0.35) {
       entidades.push({
         tipo: mejorResultado.item.tipo,
@@ -148,6 +178,7 @@ function extraerEntidades(textoOriginal, fuse) {
         confianza: 1 - mejorScore
       });
     }
+    */
   }
 
   return entidades;
@@ -471,7 +502,7 @@ function abrirModalEdicion(index) {
       bloque.innerHTML += `
         <div class="row g-2 mb-3">
           <div class="col-12">
-            <input type="text" class="form-control"
+            <input type="text" class="form-control input-texto-original"
               data-seccion="${sec.seccion}"
               data-linea="${i}"
               value="${textoOriginal}">
@@ -484,23 +515,42 @@ function abrirModalEdicion(index) {
       `;
     });
 
-    const tablaId = `tabla-${sec.seccion}-${1}-${Date.now()}`;
+    
 
+    /*
     bloque.innerHTML +=`
     <div class="mt-2">
-            <button type="button"
-              class="btn btn-sm btn-primary btn-preparar-registros"
-              data-tabla="${tablaId}">
-              Actualizar Datos
-            </button>
-          </div>
+      <button type="button"
+        class="btn btn-sm btn-primary btn-preparar-registros"
+        data-tabla="${tablaId}">
+        Generar Tabla
+      </button>
+    </div>
 
-          <div class="mt-2 contenedor-tabla"
-              id="${tablaId}">
-          </div>
+    <div class="mt-2 contenedor-tabla"
+        id="${tablaId}">
+    </div>
     `
+    */
     body.appendChild(bloque);
   });
+
+  const tablaId = `tabla-${1}-${1}-${Date.now()}`;
+  let bloqueGenerarTabla = `
+    <div class="mt-2">
+      <button type="button"
+        class="btn btn-sm btn-primary btn-preparar-registros"
+        data-tabla="${tablaId}">
+        Generar Tabla
+      </button>
+    </div>
+
+    <div class="mt-2 contenedor-tabla"
+        id="${tablaId}">
+    </div>
+    `;
+
+  body.insertAdjacentHTML("beforeend", bloqueGenerarTabla);
 
   const modal = new bootstrap.Modal(
     document.getElementById("modalEditarFormulario")
@@ -575,14 +625,30 @@ document.addEventListener("click", function(e) {
     const bloqueSeccion = document; // e.target.closest(".mb-3");
 
     const entidades = [];
-
+    const entidadesUnicas = new Set();
     bloqueSeccion.querySelectorAll(".entidad-item").forEach(item => {
 
+      /*
       const valor = item.querySelector(".entidad-valor").value;
       const tipo = item.querySelector(".entidad-tipo").value;
 
       entidades.push({ tipo, valor });
+      */
+      const valorRaw = item.querySelector(".entidad-valor").value;
+      const tipo = item.querySelector(".entidad-tipo").value;
 
+      const valor = valorRaw.trim();
+
+      if (!valor) return;
+
+      // clave única tipo+valor
+      const clave = `${tipo}|${valor}`;
+
+      if (entidadesUnicas.has(clave)) return;
+
+      entidadesUnicas.add(clave);
+
+      entidades.push({ tipo, valor });
     });
 
     generarTablaEditable(contenedor, entidades, tablaId);
@@ -773,6 +839,78 @@ document.addEventListener("click", async function(e) {
   }
 
 });
+
+document.addEventListener("input", function (e) {
+
+  debugger;
+  if (!e.target.classList.contains("input-texto-original")) return;
+
+  const input = e.target;
+  const texto = input.value.trim();
+
+  const contenedorLinea = input.closest(".row");
+  const contenedorEntidades = contenedorLinea.querySelector(".mt-2.p-2");
+
+  if (!contenedorEntidades) return;
+
+  const nuevasEntidades = extraerEntidades(texto, fuse);
+
+  actualizarEntidades(contenedorEntidades, nuevasEntidades);
+});
+
+function actualizarEntidades(contenedor, nuevasEntidades) {
+
+  // obtener entidades ya existentes
+  const existentes = Array.from(
+    contenedor.querySelectorAll(".entidad-item")
+  ).map(el => {
+    return {
+      valor: el.querySelector(".entidad-valor").value,
+      tipo: el.querySelector(".entidad-tipo").value
+    };
+  });
+
+  nuevasEntidades.forEach(ent => {
+
+    const yaExiste = existentes.some(e =>
+      e.valor === ent.valor && e.tipo === ent.tipo
+    );
+
+    if (yaExiste) return;
+
+    const entidadHTML = `
+      <div class="d-flex align-items-center mb-1 entidad-item" data-auto="true">
+
+        <input type="text"
+          class="form-control form-control-sm me-2 entidad-valor"
+          value="${ent.valor}">
+
+        <select class="form-select form-select-sm me-2 entidad-tipo">
+          <option value="producto" ${ent.tipo==='producto'?'selected':''}>Producto</option>
+          <option value="anio" ${ent.tipo==='anio'?'selected':''}>Año</option>
+          <option value="mes" ${ent.tipo==='mes'?'selected':''}>Mes</option>
+          <option value="valor" ${ent.tipo==='valor'?'selected':''}>Valor</option>
+          <option value="tipo" ${ent.tipo==='tipo'?'selected':''}>Tipo</option>
+        </select>
+
+        <small class="text-muted me-2">
+          ${ent.confianza.toFixed(2)}
+        </small>
+
+        <button type="button"
+          class="btn btn-sm btn-outline-danger btn-eliminar-entidad">
+          ✕
+        </button>
+
+      </div>
+    `;
+
+    // insertar antes del botón agregar entidad
+    const btnAgregar = contenedor.querySelector(".btn-agregar-entidad");
+    btnAgregar.insertAdjacentHTML("beforebegin", entidadHTML);
+  });
+
+}
 // ===============================
 // GUARDAR EDICIÓN (IPC)
 // ===============================
