@@ -1,7 +1,25 @@
-' FR. Visita Nombre Calle y número Rubro Formulario
-5.6. 1 CAJA GENERALES Av. San Martin 299 65122 Servicios 164 Seguro automotor
-| de seguros
-A o o o patrimon
-| 5.7. í DPOSS (DIRECCION PROVINCIAL Gobernador Ernesto M. Campos 36001 Captación, 336 Agua
-| DE OBRAS Y SERVICIOS 133 depuración y distr
-| SANITARIOS)
+Razon: ..... Panel: 11
+A: 2023 M:5 V:1
+Tipo ) Precio
+Servicio
+Cantidad de (num)
+medialunas
+y Precio
+Servicio
+Tipo Precio
+Servicio
+pte >
+Tipo Precio
+_Variante
+Tipo Precio
+Menú
+Incluye café (S/N)
+N*
+Tipo Precio
+Guarnición
+Y 2500 :
+Tipo Precio
+Guarnición
+Tipo Precio
+Guarnición
+Tipo Precio

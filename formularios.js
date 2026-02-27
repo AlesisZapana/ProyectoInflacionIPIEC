@@ -3,8 +3,15 @@ const Fuse = require("fuse.js");
 const PNotify = require('@pnotify/core');
 const PNotifyBootstrap4 = require('@pnotify/bootstrap4');
 require('@pnotify/bootstrap4');
+
+const vision = require('@google-cloud/vision')
+
 PNotify.defaultModules.set(PNotifyBootstrap4, {});
 PNotify.defaults.styling = 'bootstrap4';
+
+const cliente = new vision.ImageAnnotatorClient({
+  keyFilename: 'project-94ea3abf-6c4f-425b-812-abafb201ab01.json'
+})
 
 const options = {
   includeScore: true,
@@ -44,7 +51,7 @@ function normalizar(texto) {
 let formularios = [];
 let formularioEditandoIndex = null;
 let formulariosNormalizados = [];
-
+var rutaImagenActual="";
 
 
 
@@ -161,6 +168,497 @@ function extraerEntidades(textoOriginal, fuse) {
   return entidades;
 }
 
+async function analizarImagen(imagePath) {
+  try {
+    
+    const [result] = await cliente.documentTextDetection(imagePath);
+    const fullText = result.fullTextAnnotation;
+    // extraer todas las palabras
+    const palabras = extraerPalabras(fullText);
+
+    /*
+    debugger;
+
+    const lineaTipoY = obtenerLineaTipo(palabras);
+    if (!lineaTipoY) return null;
+
+    const { zonaProducto, zonaPrecios } = dividirZonas(palabras, lineaTipoY);
+
+    const producto = reconstruirProducto(zonaProducto);
+    const precios = detectarPrecios(zonaPrecios);
+
+    return {
+      producto,
+      precios
+    };
+
+    */
+
+    /*
+    debugger;
+
+    const tipoFormulario = obtenerTipoFormulario(palabras);
+    const periodos = obtenerPeriodos(palabras);
+
+    const maxX = Math.max(...palabras.map(p => p.centerX));
+    const productos = obtenerProductos(palabras, maxX / 2);
+
+    const productosFinal = productos.map(prod => ({
+      nombre: prod.nombre,
+      valores: obtenerValoresProducto(
+        palabras,
+        prod.y,
+        periodos
+      )
+    }));
+
+    console.log(tipoFormulario);
+    console.log(productosFinal);
+
+    return {
+      tipoFormulario,
+      productos: productosFinal
+    };
+
+    */
+    //obtener el tipo de formulario
+    const tipoFormulario = obtenerTipoFormulario(palabras);
+    
+    // detecta todos los periodos (Año y Mes) del encabezado
+    const periodos = obtenerPeriodos(palabras);
+
+    //Detecta las líneas horizontales que separan productos
+    const separadoresY = obtenerSeparadoresProductos(palabras);
+
+    //Divide el documento en bloques, uno por producto
+    const bloques = dividirEnBloques(palabras, separadoresY);
+
+    //Procesa cada bloque para reconstruir producto + precios
+    const productos = bloques
+      .map(b => procesarBloque(b,periodos))
+      .filter(p => p !== null);
+
+    return {
+      tipoFormulario,
+      productos
+    };
+
+  } catch (err) {
+    console.error('Error analyzing image:', err);
+    return null;
+  }
+}
+
+function obtenerTipoFormulario(palabras) {
+
+  // Busca la palabra que contiene "informante"
+  const palabraInformante = palabras.find(p =>
+    p.texto.toLowerCase().includes("informante")
+  );
+
+  if (!palabraInformante) return null;
+
+  const mismaLinea = palabras.filter(p =>
+    Math.abs(p.centerY - palabraInformante.centerY) < 10
+  );
+
+  mismaLinea.sort((a,b) => a.centerX - b.centerX);
+
+  // Encuentra la posición de "informante"
+  const indexInformante = mismaLinea.findIndex(p =>
+    p.texto.toLowerCase().includes("informante")
+  );
+
+  const tipo = mismaLinea
+    .slice(3, indexInformante) // saltr "Formulario: 99"
+    .map(p => p.texto)
+    .join(" ");
+
+  return tipo;
+}
+
+function obtenerPeriodos(palabras) {
+
+  const periodos = [];
+
+  const palabrasA = palabras.filter(p => p.texto === "A");
+
+  palabrasA.forEach(pA => {
+
+    const mismaLinea = palabras.filter(p =>
+      Math.abs(p.centerY - pA.centerY) < 10
+    );
+
+    mismaLinea.sort((a,b) => a.centerX - b.centerX);
+
+    const indexA = mismaLinea.findIndex(p => p === pA);
+
+    // Año está 2 posiciones después de "A"
+    const anio = parseInt(mismaLinea[indexA + 2]?.texto);
+
+    // Busca palabra "M"
+    const palabraM = mismaLinea.find(p => p.texto === "M");
+
+    if (!palabraM) return;
+
+    const indexM = mismaLinea.findIndex(p => p === palabraM);
+    const mes = parseInt(mismaLinea[indexA + 5]?.texto);
+
+    periodos.push({
+      anio,
+      mes,
+      centerX: pA.centerX // posición horizontal de la columna
+    });
+
+  });
+
+  return periodos.sort((a,b) => a.centerX - b.centerX);
+}
+
+function asociarPreciosConPeriodos(preciosDetectados, periodos) {
+
+  /*
+  const toleranciaX = 200;
+
+  const valores = [];
+
+  periodos.forEach(periodo => {
+
+    const precio = preciosDetectados.find(p =>
+      Math.abs(p.centerX - periodo.centerX) < toleranciaX
+    );
+
+    if (precio) {
+      valores.push({
+        anio: periodo.anio,
+        mes: periodo.mes,
+        valor: parseFloat(precio.texto)
+      });
+    }
+
+  });
+
+  return valores;
+  */
+  const columnas = construirColumnas(periodos);
+
+  const valores = [];
+
+  preciosDetectados.forEach(precio => {
+
+    // Busca en que columna cae horizontalmente
+    const columna = columnas.find(col =>
+      precio.centerX >= col.minX &&
+      precio.centerX < col.maxX
+    );
+
+    if (columna) {
+      valores.push({
+        anio: columna.anio,
+        mes: columna.mes,
+        valor: parseFloat(precio.texto)
+      });
+    }
+
+  });
+
+  return valores;
+}
+
+function construirColumnas(periodos) {
+
+  let columnas = [];
+  /*
+  for (let i = 0; i < periodos.length; i++) {
+
+    const actual = periodos[i];
+    const siguiente = periodos[i + 1];
+
+    const limiteIzq = i === 0
+      ? actual.centerX - 200
+      : (periodos[i - 1].centerX + actual.centerX) / 2;
+
+    const limiteDer = siguiente
+      ? (actual.centerX + siguiente.centerX) / 2
+      : actual.centerX + 200;
+
+    columnas.push({
+      anio: actual.anio,
+      mes: actual.mes,
+      minX: limiteIzq,
+      maxX: limiteDer
+    });
+  }
+  */
+  const ANCHO_COLUMNA = 357;
+  const OFFSET_PERIODO_DESDE_INICIO = 28;
+
+  columnas = periodos.map(p => {
+
+    const inicioColumna = p.centerX - OFFSET_PERIODO_DESDE_INICIO;
+
+    return {
+      anio: p.anio,
+      mes: p.mes,
+      minX: inicioColumna,
+      maxX: inicioColumna + ANCHO_COLUMNA
+    };
+  });
+  return columnas;
+}
+
+function extraerPalabras(fullText) {
+  const palabras = [];
+
+  fullText.pages.forEach(page => {
+    page.blocks.forEach(block => {
+      block.paragraphs.forEach(paragraph => {
+        paragraph.words.forEach(word => {
+
+          const texto = word.symbols.map(s => s.text).join('');
+          const v = word.boundingBox.vertices;
+
+          // Calcula centro horizontal y vertical
+          const centerX = (v[0].x + v[1].x) / 2;
+          const centerY = (v[0].y + v[2].y) / 2;
+
+          palabras.push({
+            texto,
+            centerX,
+            centerY,
+            vertices: v
+          });
+        });
+      });
+    });
+  });
+
+  return palabras;
+}
+
+function obtenerLineaTipo(palabras) {
+  const palabraTipo = palabras.find(p => 
+    p.texto.toLowerCase() === "tipo"
+  );
+
+  return palabraTipo ? palabraTipo.centerY : null;
+}
+
+function dividirZonas(palabras, lineaTipoY) {
+
+  const zonaSuperior = palabras.filter(p => p.centerY < lineaTipoY);
+
+  const zonaProducto = zonaSuperior.filter(p => p.centerX < 400); 
+  const zonaPrecios = zonaSuperior.filter(p => p.centerX >= 400);
+
+  return { zonaProducto, zonaPrecios };
+}
+
+function agruparPorFilas(palabras, tolerancia = 15) {
+  const filas = [];
+
+  palabras.forEach(p => {
+    let fila = filas.find(f => Math.abs(f.y - p.centerY) < tolerancia);
+
+    if (!fila) {
+      fila = { y: p.centerY, palabras: [] };
+      filas.push(fila);
+    }
+
+    fila.palabras.push(p);
+  });
+
+  filas.forEach(f => 
+    f.palabras.sort((a, b) => a.centerX - b.centerX)
+  );
+
+  return filas;
+}
+
+function reconstruirProducto(zonaProducto) {
+  const filas = agruparPorFilas(zonaProducto);
+
+  const texto = filas
+    .sort((a,b) => a.y - b.y)
+    .map(f => f.palabras.map(p => p.texto).join(" "))
+    .join(" ");
+
+  return texto;
+}
+
+/*
+function obtenerProductos(palabras, limiteX) {
+
+  const zonaIzquierda = palabras.filter(p => p.centerX < limiteX);
+
+  const filas = agruparPorFilas(zonaIzquierda, 15)
+    .sort((a,b) => a.y - b.y);
+
+  return filas.map(f => ({
+    nombre: f.palabras.map(p => p.texto).join(" "),
+    y: f.y
+  }));
+}
+
+function obtenerValoresProducto(palabras, productoY, periodos) {
+
+  const toleranciaY = 12;
+  const toleranciaX = 40;
+
+  const numeros = palabras.filter(p =>
+    /^[0-9]+(\.[0-9]+)?$/.test(p.texto) &&
+    Math.abs(p.centerY - productoY) < toleranciaY
+  );
+
+  const valores = [];
+
+  periodos.forEach(periodo => {
+
+    const precio = numeros.find(n =>
+      Math.abs(n.centerX - periodo.centerX) < toleranciaX
+    );
+
+    if (precio) {
+      valores.push({
+        anio: periodo.anio,
+        mes: periodo.mes,
+        valor: parseFloat(precio.texto)
+      });
+    }
+  });
+
+  return valores;
+}
+*/
+function esNumero(texto) {
+  return /^[0-9]+(\.[0-9]+)?$/.test(texto);
+}
+
+function detectarPrecios(zonaPrecios) {
+  /*
+  const numeros = zonaPrecios
+    .filter(p => esNumero(p.texto))
+    .sort((a,b) => a.centerX - b.centerX);
+
+  return numeros.map(n => parseFloat(n.texto));
+  */
+ return zonaPrecios
+    .filter(p => esNumero(p.texto))
+    .map(p => ({
+      texto: p.texto,
+      centerX: p.centerX,
+      centerY: p.centerY
+  }));
+}
+
+/*
+function esPrecio(texto) {
+  return /^\d+(\.\d+)?$/.test(texto);
+}
+*/
+/*
+function estructurarFormulario(filas) {
+  let producto = "";
+  let precios = [];
+
+  filas.forEach(fila => {
+    fila.palabras.forEach(p => {
+      if (esPrecio(p.texto)) {
+        precios.push(parseFloat(p.texto));
+      }
+    });
+  });
+
+  // producto = primeras filas sin números grandes
+  const filaProducto = filas.find(f =>
+    f.palabras.some(p => !esPrecio(p.texto))
+  );
+
+  if (filaProducto) {
+    producto = filaProducto.palabras
+      .map(p => p.texto)
+      .join(" ");
+  }
+
+  return { producto, precios };
+}
+*/
+/** Tercer cambio */
+function obtenerSeparadoresProductos(palabras) {
+
+  const tipos = palabras.filter(p =>
+    p.texto.toLowerCase() === "tipo"
+  );
+
+  const filasTipo = agruparPorFilas(tipos, 10)
+    .sort((a,b) => a.y - b.y);
+
+  return filasTipo.map(f => f.y);
+}
+
+function dividirEnBloques(palabras, separadoresY) {
+// Divide todas las palabras en bloques verticales
+  const bloques = [];
+
+  for (let i = 0; i < separadoresY.length; i++) {
+
+    const inicio = separadoresY[i] - 80; // margen arriba del "Tipo"
+    const fin = separadoresY[i + 1] 
+      ? separadoresY[i + 1] - 20
+      : Infinity;
+
+    const bloque = palabras.filter(p =>
+      p.centerY >= inicio && p.centerY < fin
+    );
+
+    bloques.push(bloque);
+  }
+
+  return bloques;
+}
+
+function procesarBloque(bloque, periodos) {
+  /*
+  const lineaTipoY = obtenerLineaTipo(bloque);
+  if (!lineaTipoY) return null;
+
+  const { zonaProducto, zonaPrecios } = dividirZonas(bloque, lineaTipoY);
+
+  const producto = reconstruirProducto(zonaProducto);
+  const precios = detectarPrecios(zonaPrecios);
+
+  if (!producto || precios.length === 0) return null;
+
+  return { producto, precios };
+  */
+  // Busca línea para dividir producto y precios
+  const lineaTipoY = obtenerLineaTipo(bloque);
+  if (!lineaTipoY) return null;
+
+  // Divide en zona izquierda (producto) y derecha (precios)
+  const { zonaProducto, zonaPrecios } = dividirZonas(bloque, lineaTipoY);
+
+  // Reconstruye texto completo del producto
+  const producto = reconstruirProducto(zonaProducto);
+
+  // Detecta números en la zona de precios
+  const preciosDetectados = detectarPrecios(zonaPrecios);
+
+  if (!producto || preciosDetectados.length === 0)
+    return null;
+
+  // Asocia cada precio a su periodo correspondiente
+  const valores = asociarPreciosConPeriodos(preciosDetectados,periodos);
+
+  if (valores.length === 0)
+    return null;
+
+  return {
+    nombre: producto,
+    valores
+  };
+}
+
 // ===============================
 // CONFIGURACIÓN DE EVENTOS
 // ===============================
@@ -275,6 +773,12 @@ function renderTabla(lista) {
         <button class="btn btn-sm btn-warning btnEditar" data-index="${index}">
           <i class="bi bi-pencil">Editar</i>
         </button>
+              <button class="btn btn-sm btn-outline-primary btnAnalizarImagen"
+              data-imagen="${formulario.imagen}"
+              data-bs-toggle="modal"
+              data-bs-target="#modalAnalizarImagen">
+        <i class="bi bi-image">Analizar Imagen</i>
+      </button>
       </td>
 
       <td>
@@ -307,9 +811,19 @@ function manejarEventosTabla(e) {
 
   if (e.target.closest(".btnVerImagen")) {
     const imgPath = e.target.closest(".btnVerImagen").dataset.imagen;
-    mostrarImagen(imgPath);
+    mostrarImagen(imgPath,"imagenModal");
+    //analizarImagen(imgPath)
+  }
+
+  if (e.target.closest(".btnAnalizarImagen")) {
+    const imgPath = e.target.closest(".btnAnalizarImagen").dataset.imagen;
+    mostrarImagen(imgPath,"imagenModalAnalizar");
+    rutaImagenActual = imgPath;
+    //analizarImagen(imgPath)
   }
 }
+
+
 
 
 // ===============================
@@ -322,9 +836,9 @@ function mostrarDetalle(index) {
   // Expande el renglón
 }
 
-function mostrarImagen(imgPath) {
+function mostrarImagen(imgPath,ubicacion) {
 
-  const img = document.getElementById("imagenModal");
+  const img = document.getElementById(ubicacion);
 
   if (!imgPath) {
     img.src = "";
@@ -577,6 +1091,122 @@ document.addEventListener("click", function(e) {
   }
 
 });
+
+document.addEventListener("click", async function(e) {
+
+  if (e.target.classList.contains("btn-leer-imagen")) {
+    debugger;
+
+    const boton = e.target;
+    const loader = document.getElementById("loader-ocr");
+    const contenedor = document.getElementById("tabla-reprocesada");
+
+    try {
+      loader.style.display = "block";
+      boton.disabled = true;
+
+      var resultado = await analizarImagen(rutaImagenActual);
+
+      const entidades = convertirResultadoAEntidades(resultado);
+
+
+      generarTablaEditable(contenedor, entidades, "tabla-reprocesada");
+      const tbody = contenedor.querySelector("tbody");
+      const botonAgregar = contenedor.querySelector(".btn-agregar-fila");
+
+      const tipoFormulario = resultado.tipoFormulario?.trim();
+
+      let esPrimeraFila = true;
+
+      resultado.productos.forEach(producto => {
+
+        producto.valores.forEach(v => {
+
+          if (!esPrimeraFila) {
+            botonAgregar.click(); // crear fila adicional
+          }
+
+          const filaActual = esPrimeraFila
+            ? tbody.querySelector("tr:first-child")
+            : tbody.lastElementChild;
+
+          const selects = filaActual.querySelectorAll("select");
+
+          selects[0].value = producto.nombre;
+          selects[1].value = v.anio;
+          selects[2].value = v.mes;
+          selects[3].value = v.valor;
+          selects[4].value = tipoFormulario;
+
+          esPrimeraFila = false;
+
+        });
+
+      });
+      
+    } catch (error) {
+
+      PNotify.error({
+        title: "Error",
+        text: error.message,
+        delay: 2000
+      });
+      
+    } finally {
+      loader.style.display = "none";
+      boton.disabled = false;
+    }
+    
+
+  }
+
+});
+
+function convertirResultadoAEntidades(resultado) {
+
+  const entidades = [];
+  const tipoFormulario = resultado.tipoFormulario?.trim();
+
+  const productosUnicos = new Set();
+  const aniosUnicos = new Set();
+  const mesesUnicos = new Set();
+  const valoresUnicos = new Set();
+
+  resultado.productos.forEach(prod => {
+
+    productosUnicos.add(prod.nombre);
+
+    prod.valores.forEach(v => {
+      aniosUnicos.add(v.anio);
+      mesesUnicos.add(v.mes);
+      valoresUnicos.add(v.valor);
+    });
+
+  });
+
+  productosUnicos.forEach(p =>
+    entidades.push({ tipo: "producto", valor: p })
+  );
+
+  aniosUnicos.forEach(a =>
+    entidades.push({ tipo: "anio", valor: a })
+  );
+
+  mesesUnicos.forEach(m =>
+    entidades.push({ tipo: "mes", valor: m })
+  );
+
+  valoresUnicos.forEach(v =>
+    entidades.push({ tipo: "valor", valor: v })
+  );
+
+  if (tipoFormulario) {
+    entidades.push({ tipo: "tipo", valor: tipoFormulario });
+  }
+
+  return entidades;
+}
+
 
 document.addEventListener("click", function(e) {
 

@@ -1,75 +1,9 @@
 {
   "formularios": [
     {
-      "id": 1,
-      "fecha": "2026-02-09T23:30:40.854Z",
-      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602092029.png",
-      "datos": [
-        {
-          "seccion": 1,
-          "lineas": [
-            {
-              "texto": "Pizza",
-              "score": 0.4436494618023994
-            },
-            {
-              "texto": "2024",
-              "score": 0.9776855120769825
-            },
-            {
-              "texto": "2",
-              "score": 0.06182354876629148
-            },
-            {
-              "texto": "Bar y restaurante",
-              "score": 0.40513391148957023
-            },
-            {
-              "texto": "2900",
-              "score": 0.28609801891613706
-            }
-          ]
-        }
-      ],
-      "estado": "Confirmado"
-    },
-    {
-      "id": 2,
-      "fecha": "2026-02-10T03:30:20.008Z",
-      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602100030.png",
-      "datos": [
-        {
-          "seccion": 1,
-          "lineas": [
-            {
-              "texto": "Pizza consumida fuera del 2050.00 y ZHCbO - t Z7ieo - P ALO : p -25S0",
-              "score": 0.4436494618023994
-            },
-            {
-              "texto": "hogar 1821108 Tipo Precio Tip Precio Tipo Precio Tipo Precio Tipo Precio",
-              "score": 0.9776855120769825
-            },
-            {
-              "texto": "De muzzarela. Grande. Servicio en MED�A MASA",
-              "score": 0.06182354876629148
-            },
-            {
-              "texto": "mesa. A la piedra o media masa Variante Variante Variante Variante Variante",
-              "score": 0.40513391148957023
-            },
-            {
-              "texto": "AAA o 5  _ -=__�___ _� _�__�_�- == A 2 A ng gg AAKAXA -� _����� 1",
-              "score": 0.28609801891613706
-            }
-          ]
-        }
-      ],
-      "estado": "Pendiente"
-    },
-    {
       "id": 3,
       "fecha": "2026-02-10T03:31:54.731Z",
-      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602100031.png",
+      "imagen": "imagenes/recorte_202602100031.png",
       "datos": [
         {
           "seccion": 1,
@@ -283,80 +217,9 @@
       "estado": "Pendiente"
     },
     {
-      "id": 4,
-      "fecha": "2026-02-10T03:51:40.198Z",
-      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602100046.png",
-      "datos": [
-        {
-          "seccion": 1,
-          "lineas": [
-            {
-              "texto": "P 2000.00 y 2100 f 272300: P 23300 $. 3630",
-              "score": 0.9887483216522228
-            },
-            {
-              "texto": "Tipo Precio Tip Precio Tipo Precio Tipo Precio Tipo Precio",
-              "score": 0.1282844131697476
-            },
-            {
-              "texto": "ENSALADA (LECHUGA",
-              "score": 0.9279136882433783
-            },
-            {
-              "texto": "Guarnici�n Guarnici�n Guarnici�n Guarnici�n Guarnici�n",
-              "score": 0.03186068192846525
-            },
-            {
-              "texto": "y sr o a E atun",
-              "score": 0.9822220945813953
-            }
-          ]
-        },
-        {
-          "seccion": 2,
-          "lineas": [
-            {
-              "texto": "|",
-              "score": 0.3885194734549984
-            }
-          ]
-        }
-      ],
-      "estado": "Confirmado"
-    },
-    {
-      "id": 5,
-      "fecha": "2026-02-10T04:01:14.130Z",
-      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602100059.png",
-      "datos": [
-        {
-          "seccion": 1,
-          "lineas": [
-            {
-              "texto": "P 2000.00 y 2100 f 272300: P 23300 $. 3630",
-              "score": 0.6661046728441589
-            },
-            {
-              "texto": "Tipo Precio Tip Precio Tipo Precio Tipo Precio Tipo Precio",
-              "score": 0.37539546511006594
-            },
-            {
-              "texto": "ENSALADA (LECHUGA",
-              "score": 0.28627819001460875
-            },
-            {
-              "texto": "Guarnici�n Guarnici�n Guarnici�n Guarnici�n Guarnicion",
-              "score": 0.19021571887699373
-            }
-          ]
-        }
-      ],
-      "estado": "Confirmado"
-    },
-    {
       "id": 9241,
       "fecha": "2026-02-15T17:25:30.517Z",
-      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602151424.png",
+      "imagen": "imagenes/recorte_202602151424.png",
       "datos": [
         {
           "seccion": 1,
@@ -503,36 +366,519 @@
       "estado": "Pendiente"
     },
     {
-      "id": 8994,
-      "fecha": "2026-02-24T19:21:17.157Z",
-      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602241616.png",
+      "id": 2633,
+      "fecha": "2026-02-25T23:48:42.027Z",
+      "imagen": "imagenes/recorte_202602252048.png",
       "datos": [
         {
           "seccion": 1,
           "lineas": [
             {
-              "texto": ". de \" * S El",
-              "score": 0.034180736155548175
+              "texto": "",
+              "score": 0.8814572574308035
+            }
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.9129168775337071
+            }
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            {
+              "texto": "Formulario: 99 Bar y restaurante Informante: 3170086",
+              "score": 0.5826332109076189
             },
             {
-              "texto": "Ravioles con salsa P 2150.00 L YA U SO P so 2) P 3500 P 3 Y So",
-              "score": 0.6388398326402203
+              "texto": "Razon: Panel: 11 Razon: ..... Panel: 11",
+              "score": 0.018457707094071907
             },
             {
-              "texto": "cons.fuera del hogar Tipo Precio Tipo Precio Tipo Precio Ti Precio Tipo Precio",
-              "score": 0.7842346893319174
+              "texto": "A: 2023 M: 2 V: 1 A: 2023 M:4 V:1",
+              "score": 0.8993393739902296
+            },
+            {
+              "texto": "Desayuno consumido fuera Pp 1100.00 T - pz So",
+              "score": 0.9605513920041437
+            },
+            {
+              "texto": "del hogar Tipo Precio Tipo Precio",
+              "score": 0.6734969316601849
+            },
+            {
+              "texto": "1311101",
+              "score": 0.22168187857631572
+            },
+            {
+              "texto": "Caf� con leche con 2 0 3 : AMBOS",
+              "score": 0.47249626199418215
+            },
+            {
+              "texto": "medialunas. Servicio Servicio",
+              "score": 0.5382218109396073
+            },
+            {
+              "texto": "Para consumir en el local. Por la",
+              "score": 0.36430712625980033
+            },
+            {
+              "texto": "ma�ana. : 2 :",
+              "score": 0.5520163000824578
+            },
+            {
+              "texto": "Servicio en mesa. Cantidad de (num) Cantidad de (num)",
+              "score": 0.7522533016746129
+            },
+            {
+              "texto": "medialunas medialunas",
+              "score": 0.18294660890919445
+            },
+            {
+              "texto": "Hamburguesa consumida N N",
+              "score": 0.12826440417053897
+            },
+            {
+              "texto": "fuera del hogar Tipo Precio Tipo Precio",
+              "score": 0.8340812751669651
+            },
+            {
+              "texto": "1321102",
+              "score": 0.2330236206555807
+            },
+            {
+              "texto": "Hamburguesa en sandwich. AMBOS",
+              "score": 0.4981139384420037
+            },
+            {
+              "texto": "Con o sin guarnici�n. Servicio Servicio",
+              "score": 0.7925500342528811
+            },
+            {
+              "texto": "Servicio en mesa o en barra.",
+              "score": 0.2635887815162996
+            },
+            {
+              "texto": "Pancho consurnido fuera del N N",
+              "score": 0.9611019490193997
+            },
+            {
+              "texto": "hogar Tipo Precio Tipo Precio",
+              "score": 0.01402005129558126
+            },
+            {
+              "texto": "1321103",
+              "score": 0.8699131213048548
+            },
+            {
+              "texto": "Simple. Superpancho. AMBOS",
+              "score": 0.16283618870464833
+            },
+            {
+              "texto": "Servicio en mesa o en barra. Servicio Servicio",
+              "score": 0.22423479635115218
+            },
+            {
+              "texto": "Pizza consumida fuera del 2050.00 y ZHCbo -",
+              "score": 0.2040674858528626
+            },
+            {
+              "texto": "hogar Tipo Precio Tip Precio",
+              "score": 0.6365739925171436
+            },
+            {
+              "texto": "1321105",
+              "score": 0.7571853804946254
+            },
+            {
+              "texto": "De muzzarela. Grande. Servicio en MEDIA MASA",
+              "score": 0.41027856346102176
+            },
+            {
+              "texto": "mesa. A la piedra o media masa Variante Variante",
+              "score": 0.21899027415390937
+            },
+            {
+              "texto": "Men� ejecutivo Pp 1500.00 � ZOO",
+              "score": 0.6789486393245188
+            },
+            {
+              "texto": "| 1321106 Tipo Precio Yi Precio",
+              "score": 0.10161740321927248
+            },
+            {
+              "texto": "Pla incipal, bebi",
+              "score": 0.8289545047920068
+            },
+            {
+              "texto": "| napa bebida y postre (o PLATO PRINCIPAL + B",
+              "score": 0.9165519646312867
+            },
+            {
+              "texto": "- Servicio en mesa, Men� Men�",
+              "score": 0.7613291723884146
+            },
+            {
+              "texto": "| N",
+              "score": 0.6269028821151372
+            },
+            {
+              "texto": "] uN _ Incluye caf� (S/N) Incluye caf� (S/N)",
+              "score": 0.06938009864841921
+            },
+            {
+              "texto": "Cuarto de pollo consumido N 114",
+              "score": 0.20121342047912205
+            },
+            {
+              "texto": "fuera hogar Tipo Precio �po �Precio",
+              "score": 0.7098092548372099
+            },
+            {
+              "texto": "1322102",
+              "score": 0.5576286357612974
+            },
+            {
+              "texto": "Con guarnici�n. Porci�n. Servicio en",
+              "score": 0.769341826215675
+            },
+            {
+              "texto": "mesa, con cubiertos y vajilla no Guarnici�n Guarnici�n",
+              "score": 0.5639992776872407
+            },
+            {
+              "texto": "descartable.",
+              "score": 0.6253668016469744
+            },
+            {
+              "texto": "Milanesa de carne vacuna P 2000.00 Y s WA 100",
+              "score": 0.7777942379031346
+            },
+            {
+              "texto": "cons fuera del hogar Tipo Precio Tip Precio",
+              "score": 0.30887605626639836
+            },
+            {
+              "texto": "1322103",
+              "score": 0.16269023793814275
+            },
+            {
+              "texto": "| Milanesa de carne vacuna con ENSALADA (LECHUGA",
+              "score": 0.7390460798173843
+            },
+            {
+              "texto": "' guarnici�n. Servicio en mesa con Guarnici�n Guarnici�n",
+              "score": 0.56081475085701
+            },
+            {
+              "texto": "cubiertos y vajilla no descartable.",
+              "score": 0.39537350441374275
+            },
+            {
+              "texto": "Filet de merluza consumido N",
+              "score": 0.20781968514599503
+            },
+            {
+              "texto": "fuera del hogar Tipo Preci s",
+              "score": 0.6193864115424113
+            },
+            {
+              "texto": "1322104 p recio po Precio",
+              "score": 0.023370466356017028
+            },
+            {
+              "texto": "A la romana con guarnici�n.",
+              "score": 0.1931643086008572
+            },
+            {
+              "texto": "Servicio en mesa, con cubiertos y Guarnici�n Guarnici�n",
+              "score": 0.1474382957498106
+            },
+            {
+              "texto": "vajilla no descartable.",
+              "score": 0.7740311412696792
+            },
+            {
+              "texto": "Ravioles con salsa p 2150.00 4 2450",
+              "score": 0.5507009548067474
+            },
+            {
+              "texto": "cons.fuera del hogar Tipo Precio Tipo Precio",
+              "score": 0.3205578442655934
+            },
+            {
+              "texto": "1322105",
+              "score": 0.860807539296996
             },
             {
               "texto": "Con salsa de tomate.",
-              "score": 0.8998348177760644
+              "score": 0.3653266224059344
             },
             {
               "texto": "Servicio en mesa, con cubiertos y",
-              "score": 0.08537891286592614
+              "score": 0.10442931734775418
             },
             {
-              "texto": "valilla no descartable.",
-              "score": 0.46468061462975374
+              "texto": "vajilla no descartable.",
+              "score": 0.5214427422043608
+            }
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel: 11",
+              "score": 0.013173772301686038
+            },
+            {
+              "texto": "A: 2023 M:5 V:1",
+              "score": 0.03359419793557583
+            },
+            {
+              "texto": "Tipo ) Precio",
+              "score": 0.1525758713429013
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.8664204328918246
+            },
+            {
+              "texto": "Cantidad de (num)",
+              "score": 0.6983492598730734
+            },
+            {
+              "texto": "medialunas",
+              "score": 0.6531837918983348
+            },
+            {
+              "texto": "y Precio",
+              "score": 0.36061791033983814
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.6812849440879349
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.3875796278040735
+            },
+            {
+              "texto": "Servicio",
+              "score": 0.8844430666547494
+            },
+            {
+              "texto": "pte >",
+              "score": 0.6476192644778935
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.10231582707229814
+            },
+            {
+              "texto": "_Variante",
+              "score": 0.5544375414410709
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.5104066233407794
+            },
+            {
+              "texto": "Men�",
+              "score": 0.457593855625001
+            },
+            {
+              "texto": "Incluye caf� (S/N)",
+              "score": 0.10991965777991775
+            },
+            {
+              "texto": "N*",
+              "score": 0.7103285625913436
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.15179473867459325
+            },
+            {
+              "texto": "Guarnici�n",
+              "score": 0.027266214599308114
+            },
+            {
+              "texto": "Y 2500 :",
+              "score": 0.7367733254719944
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.6798189973615445
+            },
+            {
+              "texto": "Guarnici�n",
+              "score": 0.7926046664317266
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.6045094719769262
+            },
+            {
+              "texto": "Guarnici�n",
+              "score": 0.31365430372997927
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.42448230373018614
+            }
+          ]
+        },
+        {
+          "seccion": 5,
+          "lineas": [
+            {
+              "texto": "Razon: ..... Panel: 11 | Razon: ..... Panel: 11",
+              "score": 0.4682200305326467
+            },
+            {
+              "texto": "A: 2023 M:8 V:1 A: 2023 M:7 v:1",
+              "score": 0.7694206086728865
+            },
+            {
+              "texto": "AL Y Precio � Ya O",
+              "score": 0.39648614388306047
+            },
+            {
+              "texto": "Servicio Servicio",
+              "score": 0.7340132121766523
+            },
+            {
+              "texto": "Cantidad de (num) Cantidad de (num)",
+              "score": 0.7465833878526258
+            },
+            {
+              "texto": "medialunas medialunas",
+              "score": 0.8641990246041689
+            },
+            {
+              "texto": "�e Precio Pp Precio",
+              "score": 0.7352334103275378
+            },
+            {
+              "texto": "Servicio Servicio",
+              "score": 0.026924896928622433
+            },
+            {
+              "texto": "Tipo Precio -N Precio",
+              "score": 0.2324541217504723
+            },
+            {
+              "texto": "Servicio Servicio",
+              "score": 0.9670756808278247
+            },
+            {
+              "texto": "Ppa3ld00o : $ 3ss0:.",
+              "score": 0.4220481664440845
+            },
+            {
+              "texto": "Tipo Precio Tipo Precio |",
+              "score": 0.2649664693990892
+            },
+            {
+              "texto": "Variante Variante",
+              "score": 0.5377484143072611
+            },
+            {
+              "texto": "2 230%... ab - 2400:",
+              "score": 0.25263077524365185
+            },
+            {
+              "texto": "Ti Precio Tip Precio",
+              "score": 0.08151350815749536
+            },
+            {
+              "texto": "Men� Men�",
+              "score": 0.5204765579249027
+            },
+            {
+              "texto": "Incluye caf� (S/N) Icy caf� (S/N)",
+              "score": 0.8481327635173581
+            },
+            {
+              "texto": "p Precio Tipo Precio",
+              "score": 0.2548744814077051
+            },
+            {
+              "texto": "Guarnici�n : Guarnici�n",
+              "score": 0.26863513742369394
+            },
+            {
+              "texto": ": . .",
+              "score": 0.04962659315497908
+            },
+            {
+              "texto": "P 330 $'.36S0",
+              "score": 0.9164197011474386
+            },
+            {
+              "texto": "Tipo Precio Tipo Precio",
+              "score": 0.8885061765822146
+            },
+            {
+              "texto": "Guarnici�n Guarnici�n",
+              "score": 0.8513399139595927
+            },
+            {
+              "texto": "DN : Precio � : Precio",
+              "score": 0.2346267730841931
+            },
+            {
+              "texto": "Guarnici�n Guarnici�n",
+              "score": 0.4305647070739713
+            },
+            {
+              "texto": "� o * e 2",
+              "score": 0.4898457747465008
+            },
+            {
+              "texto": "P 3500\" P3YSO",
+              "score": 0.8608499538374117
+            },
+            {
+              "texto": "Ti Precio Tipo Precio",
+              "score": 0.5502310012771059
+            },
+            {
+              "texto": "A",
+              "score": 0.7717736461955025
+            }
+          ]
+        },
+        {
+          "seccion": 6,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.7084200363936055
+            }
+          ]
+        },
+        {
+          "seccion": 7,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.23780337542370944
+            }
+          ]
+        },
+        {
+          "seccion": 8,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.8827373274852688
             }
           ]
         }
