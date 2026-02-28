@@ -1,25 +1,16 @@
-Razon: ..... Panel: 11
-A: 2023 M:5 V:1
-Tipo ) Precio
-Servicio
-Cantidad de (num)
-medialunas
-y Precio
-Servicio
-Tipo Precio
-Servicio
-pte >
-Tipo Precio
-_Variante
-Tipo Precio
-Menú
-Incluye café (S/N)
-N*
-Tipo Precio
-Guarnición
-Y 2500 :
-Tipo Precio
-Guarnición
-Tipo Precio
-Guarnición
-Tipo Precio
+3170826
+Razon... Panel:
+_A:2023 M:1 V:1
+Tipo 14.200
+Nombre del bbro
+Autor
+Editorial
+Ndeartato
+20 OS
+Editorial
+Año de Edición
+N? de srtículo
+Sdltorial
+Número de tomos
+Año de Edición
+Node arficuto

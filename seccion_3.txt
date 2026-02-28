@@ -1,59 +1,14 @@
-Formulario: 99 Bar y restaurante Informante: 3170086
-Razon: Panel: 11 Razon: ..... Panel: 11
-A: 2023 M: 2 V: 1 A: 2023 M:4 V:1
-Desayuno consumido fuera Pp 1100.00 T - pz So
-del hogar Tipo Precio Tipo Precio
-1311101
-Café con leche con 2 0 3 : AMBOS
-medialunas. Servicio Servicio
-Para consumir en el local. Por la
-mañana. : 2 :
-Servicio en mesa. Cantidad de (num) Cantidad de (num)
-medialunas medialunas
-Hamburguesa consumida N N
-fuera del hogar Tipo Precio Tipo Precio
-1321102
-Hamburguesa en sandwich. AMBOS
-Con o sin guarnición. Servicio Servicio
-Servicio en mesa o en barra.
-Pancho consurnido fuera del N N
-hogar Tipo Precio Tipo Precio
-1321103
-Simple. Superpancho. AMBOS
-Servicio en mesa o en barra. Servicio Servicio
-Pizza consumida fuera del 2050.00 y ZHCbo -
-hogar Tipo Precio Tip Precio
-1321105
-De muzzarela. Grande. Servicio en MEDIA MASA
-mesa. A la piedra o media masa Variante Variante
-Menú ejecutivo Pp 1500.00 í ZOO
-| 1321106 Tipo Precio Yi Precio
-Pla incipal, bebi
-| napa bebida y postre (o PLATO PRINCIPAL + B
-- Servicio en mesa, Menú Menú
-| N
-] uN _ Incluye café (S/N) Incluye café (S/N)
-Cuarto de pollo consumido N 114
-fuera hogar Tipo Precio ¡po “Precio
-1322102
-Con guarnición. Porción. Servicio en
-mesa, con cubiertos y vajilla no Guarnición Guarnición
-descartable.
-Milanesa de carne vacuna P 2000.00 Y s WA 100
-cons fuera del hogar Tipo Precio Tip Precio
-1322103
-| Milanesa de carne vacuna con ENSALADA (LECHUGA
-' guarnición. Servicio en mesa con Guarnición Guarnición
-cubiertos y vajilla no descartable.
-Filet de merluza consumido N
-fuera del hogar Tipo Preci s
-1322104 p recio po Precio
-A la romana con guarnición.
-Servicio en mesa, con cubiertos y Guarnición Guarnición
-vajilla no descartable.
-Ravioles con salsa p 2150.00 4 2450
-cons.fuera del hogar Tipo Precio Tipo Precio
-1322105
-Con salsa de tomate.
-Servicio en mesa, con cubiertos y
-vajilla no descartable.
+3
+)
+]
+]
+k
+]
+]
+]
+]
+]
+]
+]
+J
+]

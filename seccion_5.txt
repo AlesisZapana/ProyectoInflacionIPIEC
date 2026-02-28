@@ -1,29 +1,14 @@
-Razon: ..... Panel: 11 | Razon: ..... Panel: 11
-A: 2023 M:8 V:1 A: 2023 M:7 v:1
-AL Y Precio £ Ya O
-Servicio Servicio
-Cantidad de (num) Cantidad de (num)
-medialunas medialunas
-«e Precio Pp Precio
-Servicio Servicio
-Tipo Precio -N Precio
-Servicio Servicio
-Ppa3ld00o : $ 3ss0:.
-Tipo Precio Tipo Precio |
-Variante Variante
-2 230%... ab - 2400:
-Ti Precio Tip Precio
-Menú Menú
-Incluye café (S/N) Icy café (S/N)
-p Precio Tipo Precio
-Guarnición : Guarnición
-: . .
-P 330 $'.36S0
-Tipo Precio Tipo Precio
-Guarnición Guarnición
-DN : Precio ¿ : Precio
-Guarnición Guarnición
-« o * e 2
-P 3500" P3YSO
-Ti Precio Tipo Precio
-A
+ES
+Nombre del libro
+Autor
+Editoral
+Año de Edición
+Nodeartguo
+Editorial
+Ao de Edición
+Nigearticuto
+Tipo ess
+Editonial
+Número de tomos
+Año de Edición
+Ndeartículo

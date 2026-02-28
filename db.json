@@ -884,6 +884,608 @@
         }
       ],
       "estado": "Pendiente"
+    },
+    {
+      "id": 7072,
+      "fecha": "2026-02-28T16:15:19.884Z",
+      "imagen": "C:\\Users\\H7241T\\Documents\\tesis\\electron\\my-electron-app\\imagenes\\recorte_202602281315.png",
+      "datos": [
+        {
+          "seccion": 1,
+          "lineas": [
+            {
+              "texto": "Formulario: 94 � Libros)",
+              "score": 0.15003191737162824
+            },
+            {
+              "texto": "Texto secundario",
+              "score": 0.9265901973150392
+            },
+            {
+              "texto": "8211102",
+              "score": 0.23832499532686646
+            },
+            {
+              "texto": "Libro de Historia para tercer a�o",
+              "score": 0.270893047299134
+            },
+            {
+              "texto": "ESB (o equivalentes).",
+              "score": 0.03159385188580255
+            },
+            {
+              "texto": "Edici�n dentro de tos CHimos 2",
+              "score": 0.06511716446418214
+            },
+            {
+              "texto": "a�os",
+              "score": 0.5466415375953142
+            },
+            {
+              "texto": "Texto universitario",
+              "score": 0.6089791062940155
+            },
+            {
+              "texto": "8211103",
+              "score": 0.6541243453430381
+            },
+            {
+              "texto": "C�digo civil y comercial, est�n",
+              "score": 0.43934658771403834
+            },
+            {
+              "texto": "v�sllca para estuciartes. Edici�n",
+              "score": 0.926121023533782
+            },
+            {
+              "texto": "dentro de l29 3 �ltsnos a�os.",
+              "score": 0.03708464841735748
+            },
+            {
+              "texto": "Diccionario",
+              "score": 0.6544335204537497
+            },
+            {
+              "texto": "8211108",
+              "score": 0.4001722077508518
+            },
+            {
+              "texto": "Lengua espa�ola.",
+              "score": 0.9693677694618223
+            },
+            {
+              "texto": "Para uso escola\".",
+              "score": 0.35279116222427453
+            },
+            {
+              "texto": "Edici�n dentro ce los dimos 3",
+              "score": 0.7512828568810197
+            },
+            {
+              "texto": "a�os",
+              "score": 0.9750769602151104
+            },
+            {
+              "texto": "Exclulr enciclop�dicos.",
+              "score": 0.267224131913097
+            }
+          ]
+        },
+        {
+          "seccion": 2,
+          "lineas": [
+            {
+              "texto": "textos Informante",
+              "score": 0.6029321140085002
+            },
+            {
+              "texto": "e",
+              "score": 0.14628469723453796
+            },
+            {
+              "texto": "| Razon: Panel:",
+              "score": 0.9057023939520303
+            },
+            {
+              "texto": "�A 2002 Me 12 Vo",
+              "score": 0.32796461198433513
+            },
+            {
+              "texto": "P 4000.01",
+              "score": 0.029143416957218005
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.06002394662411836
+            },
+            {
+              "texto": "HISTORIA :",
+              "score": 0.7405299794537588
+            },
+            {
+              "texto": "Nombre de! fibro",
+              "score": 0.6213034604498004
+            },
+            {
+              "texto": "LLAVES",
+              "score": 0.8245394162585435
+            },
+            {
+              "texto": "Autor",
+              "score": 0.043444308931960274
+            },
+            {
+              "texto": "MANDIOCA",
+              "score": 0.7521739120206614
+            },
+            {
+              "texto": "Editore!",
+              "score": 0.21208798785359817
+            },
+            {
+              "texto": "201",
+              "score": 0.7339637638659313
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.7918024394270948
+            },
+            {
+              "texto": "978 987 411324!",
+              "score": 0.10608868789498405
+            },
+            {
+              "texto": "N? de art�culo",
+              "score": 0.029458264852644467
+            },
+            {
+              "texto": "P 2500.01",
+              "score": 0.01748527253919785
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.15121843166201754
+            },
+            {
+              "texto": "EDICIONES DEL PA�S",
+              "score": 0.6188560410571597
+            },
+            {
+              "texto": "Estada\"",
+              "score": 0.5494066721270134
+            },
+            {
+              "texto": "2020 (NUEVO C�DIGO",
+              "score": 0.9696330926115415
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.517990939331882
+            },
+            {
+              "texto": "NO DETALLA",
+              "score": 0.8784634602490617
+            },
+            {
+              "texto": "_N de art�culo �",
+              "score": 0.6067959066408344
+            },
+            {
+              "texto": "al 500.0:",
+              "score": 0.07931929080675015
+            },
+            {
+              "texto": "Tipe Precio",
+              "score": 0.9295901520552292
+            },
+            {
+              "texto": "ESCALPE",
+              "score": 0.9988052873051383
+            },
+            {
+              "texto": "Editora)",
+              "score": 0.6883024733919325
+            },
+            {
+              "texto": "1",
+              "score": 0.5922599845132273
+            },
+            {
+              "texto": "N�mero de tomos",
+              "score": 0.4612044476591821
+            },
+            {
+              "texto": "201",
+              "score": 0.6034157853394164
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.045852888298210326
+            },
+            {
+              "texto": "9789501312768",
+              "score": 0.04759152136610734
+            },
+            {
+              "texto": "Ne? de art�culo",
+              "score": 0.6869135686618251
+            }
+          ]
+        },
+        {
+          "seccion": 3,
+          "lineas": [
+            {
+              "texto": "3",
+              "score": 0.2828450108057894
+            },
+            {
+              "texto": ")",
+              "score": 0.6138067816265627
+            },
+            {
+              "texto": "]",
+              "score": 0.8903329626887297
+            },
+            {
+              "texto": "]",
+              "score": 0.6025799385028991
+            },
+            {
+              "texto": "k",
+              "score": 0.32166590353698865
+            },
+            {
+              "texto": "]",
+              "score": 0.2632072621417376
+            },
+            {
+              "texto": "]",
+              "score": 0.2660406032265099
+            },
+            {
+              "texto": "]",
+              "score": 0.13851048241461927
+            },
+            {
+              "texto": "]",
+              "score": 0.14124754223791913
+            },
+            {
+              "texto": "]",
+              "score": 0.5755854342209137
+            },
+            {
+              "texto": "]",
+              "score": 0.17060692462452942
+            },
+            {
+              "texto": "]",
+              "score": 0.22322534643560266
+            },
+            {
+              "texto": "J",
+              "score": 0.4551857339237235
+            },
+            {
+              "texto": "]",
+              "score": 0.5541848840611006
+            }
+          ]
+        },
+        {
+          "seccion": 4,
+          "lineas": [
+            {
+              "texto": "3170826",
+              "score": 0.6158920996593098
+            },
+            {
+              "texto": "Razon... Panel:",
+              "score": 0.19453241011249434
+            },
+            {
+              "texto": "_A:2023 M:1 V:1",
+              "score": 0.5480082184911406
+            },
+            {
+              "texto": "Tipo 14.200",
+              "score": 0.06898303897132307
+            },
+            {
+              "texto": "Nombre del bbro",
+              "score": 0.5985102676007577
+            },
+            {
+              "texto": "Autor",
+              "score": 0.7288338178982012
+            },
+            {
+              "texto": "Editorial",
+              "score": 0.25293497899005013
+            },
+            {
+              "texto": "Ndeartato",
+              "score": 0.6780586651325335
+            },
+            {
+              "texto": "20 OS",
+              "score": 0.6903405626931538
+            },
+            {
+              "texto": "Editorial",
+              "score": 0.5443945631597522
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.17095816887136817
+            },
+            {
+              "texto": "N? de srt�culo",
+              "score": 0.45145592980468696
+            },
+            {
+              "texto": "Sdltorial",
+              "score": 0.3622796558466328
+            },
+            {
+              "texto": "N�mero de tomos",
+              "score": 0.5108532523364704
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.1712623786564622
+            },
+            {
+              "texto": "Node arficuto",
+              "score": 0.023433765831295306
+            }
+          ]
+        },
+        {
+          "seccion": 5,
+          "lineas": [
+            {
+              "texto": "ES",
+              "score": 0.4390902958115752
+            },
+            {
+              "texto": "Nombre del libro",
+              "score": 0.04661875892082734
+            },
+            {
+              "texto": "Autor",
+              "score": 0.7344889377714454
+            },
+            {
+              "texto": "Editoral",
+              "score": 0.39392361938409004
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.3305792270691743
+            },
+            {
+              "texto": "Nodeartguo",
+              "score": 0.8363309979343636
+            },
+            {
+              "texto": "Editorial",
+              "score": 0.4233858505510595
+            },
+            {
+              "texto": "Ao de Edici�n",
+              "score": 0.39586721322321616
+            },
+            {
+              "texto": "Nigearticuto",
+              "score": 0.7871440354334664
+            },
+            {
+              "texto": "Tipo ess",
+              "score": 0.7518364697130318
+            },
+            {
+              "texto": "Editonial",
+              "score": 0.14813604023610893
+            },
+            {
+              "texto": "N�mero de tomos",
+              "score": 0.8439579296859152
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.8095396993960442
+            },
+            {
+              "texto": "Ndeart�culo",
+              "score": 0.854285216661496
+            }
+          ]
+        },
+        {
+          "seccion": 6,
+          "lineas": [
+            {
+              "texto": "|Bazon: ... Panel: 3",
+              "score": 0.7788802175403664
+            },
+            {
+              "texto": "e A: 2023 M:3 vr",
+              "score": 0.7339658319033309
+            },
+            {
+              "texto": "m IS",
+              "score": 0.7249785387422281
+            },
+            {
+              "texto": "�Nombre det llbro -",
+              "score": 0.45679109848672694
+            },
+            {
+              "texto": "Autor",
+              "score": 0.8608075460469415
+            },
+            {
+              "texto": "Editorial",
+              "score": 0.3970266343357962
+            },
+            {
+              "texto": "Afo de Edici�n",
+              "score": 0.13935632739398618
+            },
+            {
+              "texto": "IN? de articulo",
+              "score": 0.7186329299422756
+            },
+            {
+              "texto": "]",
+              "score": 0.800032776129572
+            },
+            {
+              "texto": "mo 28",
+              "score": 0.4080914348854978
+            },
+            {
+              "texto": "Editorial",
+              "score": 0.6455447682899575
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.43652899702097026
+            },
+            {
+              "texto": "Moparteo",
+              "score": 0.034031123948975006
+            },
+            {
+              "texto": ".. 1509,",
+              "score": 0.819024409570773
+            },
+            {
+              "texto": "Editorial",
+              "score": 0.047843197889576805
+            },
+            {
+              "texto": "N�rsero da tomos.",
+              "score": 0.7532208102195184
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.36484546286103336
+            },
+            {
+              "texto": "Ndearicalo",
+              "score": 0.6272756145935692
+            }
+          ]
+        },
+        {
+          "seccion": 7,
+          "lineas": [
+            {
+              "texto": "A",
+              "score": 0.6253300150392476
+            },
+            {
+              "texto": "| Razon: ..... Panel: 3",
+              "score": 0.15772010799420122
+            },
+            {
+              "texto": "A: 2023 Mia vt",
+              "score": 0.8624136842310608
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.21547362373940682
+            },
+            {
+              "texto": "Nombre del libro",
+              "score": 0.8535281649942923
+            },
+            {
+              "texto": "Autor",
+              "score": 0.42547971069483026
+            },
+            {
+              "texto": "Editorial",
+              "score": 0.7480961130632859
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.23168920358981882
+            },
+            {
+              "texto": "Nosarteto �",
+              "score": 0.055054490841134784
+            },
+            {
+              "texto": "Tipo Precio",
+              "score": 0.571085769401642
+            },
+            {
+              "texto": "Storia:",
+              "score": 0.8767346722802398
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.9265006330899692
+            },
+            {
+              "texto": "Nedearfego",
+              "score": 0.22846808616747594
+            },
+            {
+              "texto": "Tipo �reco",
+              "score": 0.8863896983495663
+            },
+            {
+              "texto": "Editoral",
+              "score": 0.2176620114412131
+            },
+            {
+              "texto": "N�mero de somos",
+              "score": 0.03831778309090961
+            },
+            {
+              "texto": "A�o de Edici�n",
+              "score": 0.34587316540404944
+            },
+            {
+              "texto": "_N* de anlculo",
+              "score": 0.9868254279220607
+            }
+          ]
+        },
+        {
+          "seccion": 8,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.7011841645784185
+            }
+          ]
+        },
+        {
+          "seccion": 9,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.2723741580742771
+            }
+          ]
+        },
+        {
+          "seccion": 10,
+          "lineas": [
+            {
+              "texto": "",
+              "score": 0.019323581263100298
+            }
+          ]
+        }
+      ],
+      "estado": "Pendiente"
     }
   ]
 }
